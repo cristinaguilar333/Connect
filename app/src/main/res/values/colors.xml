@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    //colores
+    <color name="colorprincipal">#8AACCB</color>
+    <color name="textooscuro">#292929</color>
+    <color name="textomedio">#A6A6A6</color>
+    <color name="inputtexto">#E5E5E5</color>
+    <color name="elementosclaros">#F3F3F3</color>
+    <color name="titulosres">#568ABA</color>
+    <color name="verde70">#94D3A1</color>
+    <color name="morado70">#ACA1B7</color>
+    <color name="rosa70">#EA8F8F</color>
+    <color name="amarillo70">#F2C37E</color>
+    <color name="azul70">#8AACCB</color>
+    <color name="rojo">#E8614D</color>
 </resources>
