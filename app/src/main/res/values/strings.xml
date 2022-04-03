@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Connect</string>
+    <string name="registro">Registrate</string>
+    <string name="botonregistro">CREAR CUENTA</string>
 </resources>
