@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/botones.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/circulo.xml" value="0.2195" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/round_button.xml" value="0.2195" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/splash.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.358695652173913" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.33" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_registro.xml" value="0.358695652173913" />
@@ -13,11 +15,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/splash.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/font/montserrat.xml" value="0.2552083333333333" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_iniciosesion.xml" value="0.225" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_main.xml" value="0.22" />
-
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_registro.xml" value="0.2" />
-
       </map>
     </option>
   </component>
