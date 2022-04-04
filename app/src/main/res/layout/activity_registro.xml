@@ -25,11 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="127dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="127dp"
+        android:fontFamily="@font/montserratbold"
         android:text="Regístrate"
+        android:textColor="@color/textooscuro"
         android:textSize="34sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
@@ -39,13 +40,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="209dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@font/montserratbold"
         android:text="Correo electrónico"
+        android:textColor="@color/textooscuro"
         android:textSize="20sp"
-        android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRegistrate" />
 
@@ -54,13 +57,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="274dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@font/montserratbold"
         android:text="Contraseña"
+        android:textColor="@color/textooscuro"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
@@ -93,7 +98,6 @@
         android:selectAllOnFocus="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:hint="************"
         app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
     <Button
@@ -111,19 +115,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-    <Button
-        android:id="@+id/btnCuentaExistente"
+    <TextView
+        android:id="@+id/tvcuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="71dp"
-        android:background="@android:drawable/screen_background_light_transparent"
-        android:backgroundTint="@color/azul70"
-        android:text="¿Ya tienes una cuenta? Inicia Sesión"
-        android:textAllCaps="false"
-        android:textSize="12sp"
+
+        android:layout_marginTop="24dp"
+
+        android:fontFamily="@font/montserratbold"
+        android:gravity="center"
+        android:text="¿O ya tienes cuenta?"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCrearCuenta" />
+
+    <Button
+        android:id="@+id/btnIniciaSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="131dp"
+        android:background="@drawable/botones"
+        android:backgroundTint="@color/titulosres"
+        android:text="inicia sesión"
+        android:textColor="@color/inputtexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcuenta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
