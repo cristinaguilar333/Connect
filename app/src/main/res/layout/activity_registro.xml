@@ -93,6 +93,7 @@
         android:selectAllOnFocus="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="************"
         app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
     <Button
@@ -109,4 +110,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btnCuentaExistente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="71dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:backgroundTint="@color/azul70"
+        android:text="¿Ya tienes una cuenta? Inicia Sesión"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearCuenta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
