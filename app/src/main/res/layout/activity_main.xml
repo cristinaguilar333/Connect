@@ -8,8 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="366dp"
+        android:layout_height="318dp"
+        android:translationX="25dp"
+        android:translationY="180dp"
         app:srcCompat="@drawable/logo" />
 
 
