@@ -24,4 +24,6 @@
     <color name="colorEncabezado">#8AACCB</color>
     <color name="colorBotonAmigos">#568aba</color>
     <color name="colorBotonesExtrasAmigos">#8AACCB</color>
+    <color name="colorVerde">#b5e1be</color>
+    <color name="colorGris">#c5becd</color>
 </resources>

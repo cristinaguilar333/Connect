@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccesoRapidoActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/encabezado"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="center"
+        android:text="Notas recientes"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:background="@color/amarillo70"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Pendientes"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="32dp"
+        android:background="@color/amarillo70"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Biología"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:background="@color/amarillo70"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Ecología"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Documentos recientes"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:background="@color/colorEncabezado"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Ensayo"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:background="@color/colorEncabezado"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Avance 1"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:background="@color/colorEncabezado"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Avance 2"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Multimedia reciente"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@color/colorVerde"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Mapa.jpg"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:background="@color/colorVerde"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Presentación.mp4"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:background="@color/colorVerde"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Diagrama.png"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Pizarra reciente"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@color/colorGris"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Moodboard"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@color/colorGris"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Actividad 1"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@color/colorGris"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="left"
+        android:text="Equipos"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
