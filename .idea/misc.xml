@@ -3,18 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/splash.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_amigos.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_calendario.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_chat_individual.xml" value="0.27049180327868855" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_configuracion.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_iniciosesion.xml" value="0.14709569577935647" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_main.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_perfil.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/amigos_view.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/chats_view.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/message_item.xml" value="0.27049180327868855" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.2025" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/receive_round_box.xml" value="0.186" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/round_button.xml" value="0.158" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/send_round_box.xml" value="0.186" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/splash.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/font/montserrat.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_amigos.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_calendario.xml" value="0.1947463768115942" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat.xml" value="0.16394927536231885" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat_individual.xml" value="0.1" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_configuracion.xml" value="0.33" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_iniciosesion.xml" value="0.2" />
@@ -22,8 +33,6 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_registro.xml" value="0.18" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/amigos_view.xml" value="0.1947463768115942" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/chats_view.xml" value="0.225" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/message_item.xml" value="0.33" />
       </map>
     </option>
   </component>

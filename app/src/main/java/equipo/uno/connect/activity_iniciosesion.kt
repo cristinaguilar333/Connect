@@ -7,13 +7,15 @@ import android.widget.Button
 import android.widget.ImageButton
 
 class activity_iniciosesion : AppCompatActivity() {
-    val iniciar : Button = findViewById(R.id.btnEntrar)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_iniciosesion)
 
+        val iniciar : Button = findViewById(R.id.btnEntrar)
+
         iniciar.setOnClickListener{
-            var intent : Intent = Intent(this,ChatActivity::class.java)
+            var intent : Intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
     }

@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorprincipal"
         app:layout_constraintStart_toEndOf="@+id/btnImagen"
-        app:srcCompat="@drawable/audiopequeño"
+        app:srcCompat="@drawable/audiopequeno"
         tools:layout_editor_absoluteY="685dp" />
 
     <ImageButton
@@ -119,7 +119,7 @@
         android:layout_marginStart="1dp"
         android:backgroundTint="@color/colorprincipal"
         app:layout_constraintStart_toEndOf="@+id/btnDoc"
-        app:srcCompat="@drawable/imagenpequeña"
+        app:srcCompat="@drawable/imagenpequena"
         tools:layout_editor_absoluteY="689dp" />
 
     <ImageButton
@@ -129,7 +129,7 @@
         android:layout_marginStart="16dp"
         android:backgroundTint="@color/colorprincipal"
         app:layout_constraintStart_toStartOf="@+id/messagebar"
-        app:srcCompat="@drawable/docpequeño"
+        app:srcCompat="@drawable/docpequeno"
         tools:layout_editor_absoluteY="686dp" />
 
     <ImageButton
@@ -157,7 +157,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="3dp"
         app:layout_constraintEnd_toStartOf="@+id/nombrechat"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:srcCompat="@drawable/circulo"
         tools:layout_editor_absoluteY="26dp" />
 
