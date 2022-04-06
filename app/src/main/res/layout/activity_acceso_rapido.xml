@@ -267,10 +267,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_actividad1"
         app:layout_constraintEnd_toStartOf="@+id/tv_diagrama"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toEndOf="@+id/tv_mapa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Avance1"
-        app:layout_constraintVertical_bias="0.274" />
+        app:layout_constraintTop_toBottomOf="@+id/tvChat"
+        app:layout_constraintVertical_bias="0.782" />
 
     <TextView
         android:id="@+id/tv_diagrama"
@@ -335,10 +335,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/tv_equipos"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintVertical_bias="0.814" />
 
     <TextView
         android:id="@+id/tv_equipos"
@@ -351,10 +351,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintVertical_bias="0.814" />
 
     <View
         android:id="@+id/view"
