@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="equipo.uno.connect">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -12,12 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".configuracion"
             android:exported="false" />
         <activity
             android:name=".activity_iniciosesion"
             android:exported="false" />
-
         <activity
             android:name=".perfil"
             android:exported="false" />
@@ -28,30 +37,18 @@
         <activity
             android:name=".ChatActivity"
             android:exported="false" />
-
         <activity
             android:name=".AccesoRapidoActivity"
             android:exported="false" />
         <activity
             android:name=".AmigosActivity"
             android:exported="false" />
-
         <activity
             android:name=".CrearCuenta"
             android:exported="false" />
         <activity
             android:name=".Registro"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

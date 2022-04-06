@@ -12,15 +12,16 @@ class Calendario : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_calendario)
+
         val accesoRapido : TextView = findViewById(R.id.tvAccesoRapido)
         val chat : TextView = findViewById(R.id.tvChat)
         val ajustes : ImageButton = findViewById(R.id.btnAjustes)
         val amigos : ImageButton = findViewById(R.id.btnAmigos)
         val perfil : ImageButton = findViewById(R.id.btnPerfil)
-
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calendario)
-
 
 
         accesoRapido.setOnClickListener {
