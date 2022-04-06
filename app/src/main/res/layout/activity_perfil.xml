@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+    //encabezado
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/encabezado" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:backgroundTint="@color/colorprincipal"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/flechachica"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="34dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Perfil"
+        android:textColor="@color/inputtexto"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="41dp" />
+    //encabezado
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="122dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="144dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:srcCompat="@drawable/circulo"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="476dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/camarachiquita" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="209dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Nombre de usuario"
+        android:textColor="@color/textooscuro"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfil" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="332dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/inputtexto"
+        android:ems="10"
+        android:hint="nombre de usuario"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+    <TextView
+        android:id="@+id/tvcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="209dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Correo electrónico"
+        android:textColor="@color/textooscuro"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="332dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/inputtexto"
+        android:ems="10"
+        android:hint="usuario@gmail.com"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcorreo" />
+
+    <TextView
+        android:id="@+id/tvContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="209dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Contraseña"
+        android:textColor="@color/textooscuro"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+    <EditText
+        android:id="@+id/etContrasenia"
+        android:layout_width="332dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/inputtexto"
+        android:ems="10"
+        android:hint="*************"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContra" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="131dp"
+        android:background="@drawable/botones"
+        android:backgroundTint="@color/titulosres"
+        android:text="guardar"
+        android:textColor="@color/inputtexto"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
