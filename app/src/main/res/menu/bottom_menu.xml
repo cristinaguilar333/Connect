@@ -3,14 +3,14 @@
     <item
         android:id="@+id/ajustes"
         android:title="Ajustes"
-        android:icon="@drawable/ic_baseline_settings_24"/>
+        android:icon="@drawable/ic_action_ajustes"/>
     <item
         android:id="@+id/amigos"
         android:title="Amigos"
-        android:icon="@drawable/ic_baseline_group_24"/>
+        android:icon="@drawable/amigos"/>
     <item
         android:id="@+id/perfil"
         android:title="Perfil"
-        android:icon="@drawable/ic_baseline_person_24"/>
+        android:icon="@drawable/ic_action_perfil"/>
 
 </menu>
