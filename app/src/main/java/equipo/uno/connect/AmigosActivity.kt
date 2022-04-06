@@ -18,6 +18,8 @@ class AmigosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_amigos)
 
+        agregarAmigos()
+
         var listView: ListView = findViewById(R.id.listAmigos_view) as ListView
         var adaptador: AdaptadorAmigos=AdaptadorAmigos(this,listaAmigos)
         listView.adapter=adaptador

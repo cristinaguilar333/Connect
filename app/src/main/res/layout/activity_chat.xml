@@ -7,150 +7,156 @@
     android:orientation="vertical"
     tools:context=".ChatActivity">
 
+    //Encabezado
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/ivEncabezado"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:scaleType="fitXY"
         android:src="@drawable/encabezado"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/fotoMaria"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/circulo"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvAccesoRapido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="65dp"
         android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="María"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fotoMaria"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="Hola ¿Cómo estas?"
-        android:textSize="17sp"
+        android:text="Acceso rápido"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="170dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginRight="172dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="Chat"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tvCalendario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/tvCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Calendario"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
 
     <ImageView
-        android:id="@+id/fotoEquipo3"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/fotoErnesto"
+        android:id="@+id/ivLogo2"
+        android:layout_width="114dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEncabezado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotoMaria"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/circulo" />
+        app:srcCompat="@drawable/connectlogo" />
 
-    <TextView
-        android:id="@+id/textView2"
+    //encabezado
+
+
+    <ListView
+        android:id="@+id/listChat_view"
+        android:layout_width="322dp"
+        android:layout_height="452dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAmigos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado"
+        app:layout_constraintVertical_bias="0.018" />
+
+    //Pie de pagina
+    <View
+        android:id="@+id/view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="192dp"
-        android:layout_marginBottom="6dp"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="Equipo 3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:layout_height="56dp"
+        android:background="@drawable/bottomnav_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fotoEquipo3"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="Felipe: ¡Bienvenidos al grupo!"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fotoEquipo3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+    <ImageButton
+        android:id="@+id/btnAmigos"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="181dp"
 
-    <ImageView
-        android:id="@+id/fotoErnesto"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
+        android:layout_marginEnd="176dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572"
-        app:srcCompat="@drawable/circulo" />
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/amigos" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="Ernesto"
-        android:textSize="20sp"
+    <ImageButton
+        android:id="@+id/btnAjustes"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="92dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAmigos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/ajustes" />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center"
-        android:text="Archivo adjunto"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
-
+        app:layout_constraintStart_toEndOf="@+id/btnAmigos"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/perfil" />
+    //Pie de pagina
 
 </androidx.constraintlayout.widget.ConstraintLayout>
