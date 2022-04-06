@@ -158,6 +158,16 @@
         app:layout_constraintStart_toEndOf="@+id/btnAmigos"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:srcCompat="@drawable/perfil" />
+
+    <ImageButton
+        android:id="@+id/botonchatIndv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/listChat_view"
+        app:srcCompat="@drawable/nuevogrupo"
+        tools:layout_editor_absoluteX="176dp" />
+
     //Pie de pagina
 
 </androidx.constraintlayout.widget.ConstraintLayout>
