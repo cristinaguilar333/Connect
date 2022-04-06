@@ -2,4 +2,8 @@
     <string name="app_name">Connect</string>
     <string name="registro">Registrate</string>
     <string name="botonregistro">CREAR CUENTA</string>
+    <string name="title_activity_calendario">Calendario</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
