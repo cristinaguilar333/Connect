@@ -68,15 +68,15 @@ class menu_chat : AppCompatActivity() {
         }
 
         multimedia1.setOnClickListener{
-            var intent : Intent = Intent(this,chatIndividual::class.java)
+            var intent : Intent = Intent(this,MultimediaActivity::class.java)
             startActivity(intent)
         }
         multimedia2.setOnClickListener{
-            var intent : Intent = Intent(this,chatIndividual::class.java)
+            var intent : Intent = Intent(this,MultimediaActivity::class.java)
             startActivity(intent)
         }
         multimedia3.setOnClickListener{
-            var intent : Intent = Intent(this,chatIndividual::class.java)
+            var intent : Intent = Intent(this,MultimediaActivity::class.java)
             startActivity(intent)
         }
 
