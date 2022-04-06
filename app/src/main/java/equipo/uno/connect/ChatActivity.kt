@@ -19,12 +19,17 @@ class ChatActivity : AppCompatActivity() {
         agregarChats()
 
         var listView: ListView = findViewById(R.id.listChat_view) as ListView
-        var adaptador: ChatActivity.AdaptadorChat = ChatActivity.AdaptadorChat(this, listaChats)
+        var adaptador: ChatActivity.AdaptadorChat =
+            ChatActivity.AdaptadorChat(this, listaChats)
         listView.adapter=adaptador
 
 
 
+
         val chatIn : ImageButton= findViewById(R.id.botonchatIndv)
+
+        val chats : ListView=findViewById(R.id.listChat_view)
+
         val accesoRapido : TextView = findViewById(R.id.tvAccesoRapido)
         val calendario: TextView = findViewById(R.id.tvCalendario)
         val ajustes : ImageButton = findViewById(R.id.btnAjustes)
@@ -32,11 +37,17 @@ class ChatActivity : AppCompatActivity() {
         val btnperfil : ImageButton = findViewById(R.id.btnPerfil)
 
 
+        chats.setOnClickListener{
+            var intent : Intent = Intent(this,chatIndividual::class.java)
+            startActivity(intent)
+        }
+
 
         chatIn.setOnClickListener {
             var intent : Intent = Intent(this,chatIndividual::class.java)
             startActivity(intent)
         }
+
 
         accesoRapido.setOnClickListener {
             var intent : Intent = Intent(this,AccesoRapidoActivity::class.java)
