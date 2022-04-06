@@ -93,6 +93,7 @@
 
 
     <ListView
+
         android:id="@+id/listChat_view"
         android:layout_width="322dp"
         android:layout_height="452dp"

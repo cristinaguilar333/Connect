@@ -24,6 +24,7 @@ class ChatActivity : AppCompatActivity() {
         listView.adapter=adaptador
 
 
+        val chats : ListView=findViewById(R.id.listChat_view)
         val accesoRapido : TextView = findViewById(R.id.tvAccesoRapido)
         val calendario: TextView = findViewById(R.id.tvCalendario)
         val ajustes : ImageButton = findViewById(R.id.btnAjustes)
@@ -31,6 +32,10 @@ class ChatActivity : AppCompatActivity() {
         val btnperfil : ImageButton = findViewById(R.id.btnPerfil)
 
 
+        chats.setOnClickListener{
+            var intent : Intent = Intent(this,chatIndividual::class.java)
+            startActivity(intent)
+        }
         accesoRapido.setOnClickListener {
             var intent : Intent = Intent(this,AccesoRapidoActivity::class.java)
             startActivity(intent)
