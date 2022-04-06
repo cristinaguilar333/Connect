@@ -15,6 +15,10 @@
             android:name=".configuracion"
             android:exported="false" />
         <activity
+            android:name=".activity_iniciosesion"
+            android:exported="false" />
+
+        <activity
             android:name=".perfil"
             android:exported="false" />
         <activity
@@ -24,6 +28,7 @@
         <activity
             android:name=".ChatActivity"
             android:exported="false" />
+
         <activity
             android:name=".AccesoRapidoActivity"
             android:exported="false" />

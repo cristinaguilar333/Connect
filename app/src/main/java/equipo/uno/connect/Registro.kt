@@ -7,11 +7,12 @@ import android.widget.Button
 
 class Registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val btncrearCuenta : Button = findViewById(R.id.btnCrearCuenta)
+        val btnIniciaSesion : Button = findViewById(R.id.btnIniciaSesion)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-        val btncrearCuenta : Button = findViewById(R.id.btnCrearCuenta)
-        val btnIniciaSesion : Button = findViewById(R.id.btnIniciaSesion)
+
 
         btncrearCuenta.setOnClickListener {
             var intent:Intent = Intent(this, CrearCuenta::class.java)

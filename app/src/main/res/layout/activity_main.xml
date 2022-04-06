@@ -14,5 +14,13 @@
         android:translationY="180dp"
         app:srcCompat="@drawable/logo" />
 
+    <Button
+        android:id="@+id/btnComienzo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="Comenzar a conectar"
+        android:translationY="518dp" />
+
 
 </RelativeLayout>

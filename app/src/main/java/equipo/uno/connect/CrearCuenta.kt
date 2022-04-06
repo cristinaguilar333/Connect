@@ -11,11 +11,13 @@ class CrearCuenta : AppCompatActivity() {
 
     val imagen: ImageView = findViewById(R.id.imageView2)
 
+    val btnComienza : Button = findViewById(R.id.btnComienza)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cuenta)
 
-        val btnComienza : Button = findViewById(R.id.btnComienza)
+
 
         btnComienza.setOnClickListener {
             var intent : Intent = Intent(this, ChatActivity::class.java)
