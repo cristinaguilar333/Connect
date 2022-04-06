@@ -36,6 +36,7 @@ class ChatActivity : AppCompatActivity() {
             var intent : Intent = Intent(this,chatIndividual::class.java)
             startActivity(intent)
         }
+
         accesoRapido.setOnClickListener {
             var intent : Intent = Intent(this,AccesoRapidoActivity::class.java)
             startActivity(intent)
