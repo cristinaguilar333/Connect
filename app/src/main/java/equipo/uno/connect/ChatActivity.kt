@@ -28,7 +28,7 @@ class ChatActivity : AppCompatActivity() {
         val calendario: TextView = findViewById(R.id.tvCalendario)
         val ajustes : ImageButton = findViewById(R.id.btnAjustes)
         val amigos : ImageButton = findViewById(R.id.btnAmigos)
-        val perfil : ImageButton = findViewById(R.id.btnPerfil)
+        val btnperfil : ImageButton = findViewById(R.id.btnPerfil)
 
 
         accesoRapido.setOnClickListener {
@@ -51,7 +51,7 @@ class ChatActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        perfil.setOnClickListener {
+        btnperfil.setOnClickListener {
             var intent : Intent = Intent(this, perfil::class.java)
             startActivity(intent)
         }

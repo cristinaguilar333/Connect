@@ -11,7 +11,8 @@ class configuracion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_configuracion)
 
-        val volver : ImageButton = findViewById(R.id.btnVolver1)
+        val volver : ImageButton = findViewById(R.id.btnVolver2)
+
         volver.setOnClickListener{
             var intent : Intent = Intent(this,ChatActivity::class.java)
             startActivity(intent)

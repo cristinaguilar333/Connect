@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/bottomnav_bg.xml" value="0.193" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.2025" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
@@ -30,6 +31,38 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/documentoitem.xml" value="0.1" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/message_item.xml" value="0.33" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/multimediaitem.xml" value="0.225" />
+=======
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/botones.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/circulo.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/round_button.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/splash.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_registro.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/registro.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/splash.xml" value="0.158" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/font/montserrat.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/drawable/botones.xml" value="0.1305" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/drawable/circulo.xml" value="0.1305" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.1305" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/drawable/round_button.xml" value="0.1305" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/drawable/splash.xml" value="0.1305" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.25" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_amigos.xml" value="0.33" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_encuestas_rapidas.xml" value="0.1" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_iniciosesion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_notas_rapidas.xml" value="0.1" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_pizarra_virtual.xml" value="0.1" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/amigos.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/octav/AndroidStudioProjects/Connect/app/src/main/res/layout/amigos_view.xml" value="0.33" />
+>>>>>>> 94f6189356467837516511b1a27990c5062411df
       </map>
     </option>
   </component>

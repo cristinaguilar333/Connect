@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+            android:name=".EncuestasRapidasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PizarraVirtualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotasRapidasActivity"
+            android:exported="false" />
+        <activity
             android:name=".menu_chat"
             android:exported="false" />
         <activity

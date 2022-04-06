@@ -8,6 +8,8 @@
 
     //encabezado
 
+    //encabezado
+
     <ImageView
         android:id="@+id/ivEncabezado"
         android:layout_width="match_parent"
@@ -15,28 +17,33 @@
         android:scaleType="fitXY"
         android:src="@drawable/encabezado"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/btnVolver2"
-        android:backgroundTint="@color/colorprincipal"
         android:layout_width="45dp"
         android:layout_height="55dp"
-        app:srcCompat="@drawable/flechachica"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="34dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/colorprincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flechachica" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserratbold"
         android:text="Configuración"
         android:textColor="@color/inputtexto"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="45dp" />
-    //encabezado
+        app:layout_constraintStart_toEndOf="@+id/btnVolver2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvNoti"
@@ -207,10 +214,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchTema"
-        app:srcCompat="@drawable/botonayudamediano"
-        tools:layout_editor_absoluteX="333dp" />
+        app:srcCompat="@drawable/botonayudamediano" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
