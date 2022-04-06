@@ -1,15 +1,13 @@
 package equipo.uno.connect
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.ImageView
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 
 class ChatActivity : AppCompatActivity() {
     var listaChats = ArrayList<Chat>()
@@ -24,6 +22,39 @@ class ChatActivity : AppCompatActivity() {
         var adaptador: ChatActivity.AdaptadorChat =
             ChatActivity.AdaptadorChat(this, listaChats)
         listView.adapter=adaptador
+
+
+        val accesoRapido : TextView = findViewById(R.id.tvChat)
+        val calendario: TextView = findViewById(R.id.tvCalendario)
+        val ajustes : ImageButton = findViewById(R.id.btnAjustes)
+        val amigos : ImageButton = findViewById(R.id.btnAmigos)
+        val perfil : ImageButton = findViewById(R.id.btnPerfil)
+
+
+        accesoRapido.setOnClickListener {
+            var intent : Intent = Intent(this,AccesoRapidoActivity::class.java)
+            startActivity(intent)
+        }
+
+        calendario.setOnClickListener {
+            var intent : Intent = Intent(this, Calendario::class.java)
+            startActivity(intent)
+        }
+
+        ajustes.setOnClickListener {
+            var intent : Intent = Intent(this, configuracion::class.java)
+            startActivity(intent)
+        }
+
+        amigos.setOnClickListener {
+            var intent : Intent = Intent(this, AmigosActivity::class.java)
+            startActivity(intent)
+        }
+
+        perfil.setOnClickListener {
+            var intent : Intent = Intent(this, perfil::class.java)
+            startActivity(intent)
+        }
 
     }
 
