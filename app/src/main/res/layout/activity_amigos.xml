@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,42 +7,75 @@
     android:orientation="vertical"
     tools:context=".AmigosActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/encabezado" />
+    //encabezado
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="44dp"
         android:scaleType="fitXY"
-        android:src="@color/white" />
+        android:src="@drawable/encabezado"
+        app:layout_constraintBottom_toTopOf="@+id/listAmigos_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    //encabezado
+
+
+    <ImageButton
+        android:id="@+id/btn_RegresarAmigos"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/colorprincipal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        app:srcCompat="@drawable/flechachica" />
+
+    <TextView
+        android:id="@+id/tv_Amigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Amigos"
+        android:textColor="@color/inputtexto"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toEndOf="@+id/btn_RegresarAmigos"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.532" />
 
     <ListView
         android:id="@+id/listAmigos_view"
         android:layout_width="343dp"
         android:layout_height="390dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:scaleType="fitXY"
-        android:src="@color/white" />
+    <ImageButton
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorEncabezado"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/amigosmediano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listAmigos_view"
+        app:layout_constraintVertical_bias="0.503" />
 
-    <LinearLayout
-        android:layout_width="102dp"
-        android:layout_height="82dp"
-        android:orientation="vertical">
-
-        <ImageButton
-            android:layout_width="78dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@color/colorEncabezado"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/amigosmediano" />
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
