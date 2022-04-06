@@ -2,4 +2,13 @@
     <string name="app_name">Connect</string>
     <string name="registro">Registrate</string>
     <string name="botonregistro">CREAR CUENTA</string>
+    <string name="title_activity_calendario">Calendario</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="notificaciones">Las notificaciones push \n up estarán activadas</string>
+    <string name="sonido">Notificaciones, sonidos \n en la aplicación, Tono de \n llamada</string>
+    <string name="tema">Tema claro - Tema \n oscuro</string>
+    <string name="ayuda">Al pulsar el botón se le \n enviará un correo a nuestro \n servicio al cliente quien se \n encargará de contactarte y \n verificar el problema</string>
+
 </resources>

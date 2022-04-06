@@ -23,4 +23,6 @@
     <color name="rojo">#E8614D</color>
     <color name="colorVerde">#b5e1be</color>
     <color name="colorGris">#c5becd</color>
+    <color name="colorMelon">#f8bda0</color>
+    <color name="negroOpaco">#99000000</color>
 </resources>

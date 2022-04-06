@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-    <style name="Theme.Connect" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Connect" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -17,5 +17,11 @@
     
     <style name="SplashTheme" parent="Theme.Connect">
         <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+    
+    <style name="BottomNavigation">
+        <item name="android:background">@color/colorprincipal</item>
+        <item name="itemIconTint">@color/elementosclaros</item>
+        <item name="itemTextColor">@color/elementosclaros</item>
     </style>
 </resources>

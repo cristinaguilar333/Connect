@@ -7,47 +7,145 @@
     android:orientation="vertical"
     tools:context=".AccesoRapidoActivity">
 
+    //Encabezado
+
     <ImageView
+        android:id="@+id/ivEncabezado"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:scaleType="fitXY"
         android:src="@drawable/encabezado"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvAccesoRapido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Acceso rápido"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="170dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginRight="172dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="Chat"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tvCalendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/tvCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="Calendario"
+        android:textAlignment="center"
+        android:textColor="@color/inputtexto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageView
+        android:id="@+id/ivLogo2"
+        android:layout_width="114dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEncabezado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/connectlogo" />
+
+    //encabezado
+
+
+    <TextView
+        android:id="@+id/tv_notasrecientes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="Notas recientes"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_Pendiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
 
     <TextView
+        android:id="@+id/tv_Pendiente"
         android:layout_width="119dp"
         android:layout_height="31dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="25dp"
         android:background="@color/amarillo70"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Pendientes"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_DocReciente"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Biologia"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.571" />
 
     <TextView
+        android:id="@+id/tv_Biologia"
         android:layout_width="126dp"
         android:layout_height="32dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="25dp"
         android:background="@color/amarillo70"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Biología"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_DocReciente"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Ecologia"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChat"
+        app:layout_constraintVertical_bias="0.714" />
 
     <TextView
+        android:id="@+id/tv_Ecologia"
         android:layout_width="119dp"
         android:layout_height="31dp"
         android:background="@color/amarillo70"
@@ -55,31 +153,48 @@
         android:gravity="left"
         android:text="Ecología"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_Avance2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
+        app:layout_constraintVertical_bias="0.568" />
 
     <TextView
+        android:id="@+id/tv_DocReciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Documentos recientes"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_Ensayo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.891" />
 
     <TextView
+        android:id="@+id/tv_Ensayo"
         android:layout_width="119dp"
         android:layout_height="31dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="38dp"
         android:background="@color/colorEncabezado"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Ensayo"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_multimediaReciente"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Avance1"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
+        android:id="@+id/tv_Avance1"
         android:layout_width="119dp"
         android:layout_height="31dp"
         android:background="@color/colorEncabezado"
@@ -87,10 +202,15 @@
         android:gravity="left"
         android:text="Avance 1"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_multimediaReciente"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Avance2"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Biologia"
+        app:layout_constraintVertical_bias="0.66" />
 
     <TextView
+        android:id="@+id/tv_Avance2"
         android:layout_width="119dp"
         android:layout_height="31dp"
         android:background="@color/colorEncabezado"
@@ -98,20 +218,30 @@
         android:gravity="left"
         android:text="Avance 2"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_diagrama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
+        app:layout_constraintVertical_bias="0.694" />
 
     <TextView
+        android:id="@+id/tv_multimediaReciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Multimedia reciente"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.92" />
 
     <TextView
+        android:id="@+id/tv_mapa"
         android:layout_width="110dp"
         android:layout_height="30dp"
         android:background="@color/colorVerde"
@@ -119,10 +249,15 @@
         android:gravity="left"
         android:text="Mapa.jpg"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_pizarrareciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.823" />
 
     <TextView
+        android:id="@+id/tv_presentacion"
         android:layout_width="119dp"
         android:layout_height="50dp"
         android:background="@color/colorVerde"
@@ -130,42 +265,67 @@
         android:gravity="left"
         android:text="Presentación.mp4"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_actividad1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_diagrama"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/tv_mapa"
+        app:layout_constraintTop_toBottomOf="@+id/tvChat"
+        app:layout_constraintVertical_bias="0.782" />
 
     <TextView
+        android:id="@+id/tv_diagrama"
         android:layout_width="119dp"
         android:layout_height="50dp"
+        android:layout_marginTop="88dp"
         android:background="@color/colorVerde"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Diagrama.png"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="269dp"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_equipos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/tv_mapa"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Avance1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/tv_pizarrareciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="412dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Pizarra reciente"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_moodboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.285" />
 
     <TextView
+        android:id="@+id/tv_moodboard"
         android:layout_width="110dp"
         android:layout_height="30dp"
+        android:layout_marginTop="456dp"
         android:background="@color/colorGris"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Moodboard"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="565dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnAjustes"
+        app:layout_constraintEnd_toStartOf="@+id/tv_actividad1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
+        app:layout_constraintVertical_bias="0.036" />
+
+
+    //Pie de pagina
 
     <TextView
+        android:id="@+id/tv_actividad1"
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:background="@color/colorGris"
@@ -173,10 +333,15 @@
         android:gravity="left"
         android:text="Actividad 1"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="565dp" />
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/tv_equipos"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
+        app:layout_constraintVertical_bias="0.814" />
 
     <TextView
+        android:id="@+id/tv_equipos"
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:background="@color/colorGris"
@@ -184,8 +349,67 @@
         android:gravity="left"
         android:text="Equipos"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="565dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@drawable/bottomnav_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnAmigos"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="181dp"
+
+        android:layout_marginEnd="176dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/amigos" />
+
+    <ImageButton
+        android:id="@+id/btnAjustes"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="92dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAmigos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/ajustes" />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/btnAmigos"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/perfil" />
+    //Pie de pagina
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
