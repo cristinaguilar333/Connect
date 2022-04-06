@@ -10,7 +10,7 @@ class configuracion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_configuracion)
-        
+
         volver.setOnClickListener{
             var intent : Intent = Intent(this,ChatActivity::class.java)
             startActivity(intent)
