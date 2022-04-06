@@ -4,20 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.TextView
 
-class perfil : AppCompatActivity() {
-    val volver : ImageButton = findViewById(R.id.btnVolver)
-
+class chatIndividual : AppCompatActivity() {
+    val volver : ImageButton = findViewById(R.id.btnVolver1)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perfil)
+        setContentView(R.layout.activity_chat_individual)
 
         volver.setOnClickListener{
             var intent : Intent = Intent(this,ChatActivity::class.java)
             startActivity(intent)
         }
     }
-
-
 }
