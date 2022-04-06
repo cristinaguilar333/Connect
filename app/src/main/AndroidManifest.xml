@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="equipo.uno.connect">
 
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+=======
 
+>>>>>>> 38aca1e7e1208bc04b9b9b98830e6e8e67e43720
 
     <application
         android:allowBackup="true"
@@ -12,6 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+<<<<<<< HEAD
+            android:name=".documento"
+            android:exported="false" />
+        <activity
+            android:name=".chatIndividual"
+            android:exported="false" />
+=======
             android:name=".MainActivity"
             android:exported="true"
             >
@@ -21,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+>>>>>>> 38aca1e7e1208bc04b9b9b98830e6e8e67e43720
         <activity
             android:name=".configuracion"
             android:exported="false" />
