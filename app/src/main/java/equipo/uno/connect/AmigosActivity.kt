@@ -1,15 +1,13 @@
 package equipo.uno.connect
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.ImageView
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 
 class AmigosActivity : AppCompatActivity() {
     var listaAmigos = ArrayList<Amigo>()
@@ -23,6 +21,14 @@ class AmigosActivity : AppCompatActivity() {
         var listView: ListView = findViewById(R.id.listAmigos_view) as ListView
         var adaptador: AdaptadorAmigos=AdaptadorAmigos(this,listaAmigos)
         listView.adapter=adaptador
+
+        var btn_RegresarAmigos: ImageButton = findViewById(R.id.btn_RegresarAmigos)
+
+        btn_RegresarAmigos.setOnClickListener{
+            var intent : Intent = Intent(this,ChatActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun agregarAmigos(){
