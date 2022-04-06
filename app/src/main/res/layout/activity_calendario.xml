@@ -33,7 +33,9 @@
         android:textSize="18sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_editor_absoluteY="80dp"
+        android:clickable="true"
+       />
 
     <TextView
         android:id="@+id/tvChat"
@@ -49,6 +51,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        android:clickable="true"
         tools:layout_editor_absoluteX="184dp" />
 
     <TextView
@@ -63,6 +66,7 @@
         app:layout_constraintBottom_toTopOf="@+id/calendarView"
         android:textAlignment="center"
         android:textColor="@color/inputtexto"
+        android:clickable="true"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="294dp"

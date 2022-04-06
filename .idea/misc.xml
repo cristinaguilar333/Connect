@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/drawable/splash.xml" value="0.2195" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_calendario.xml" value="0.33" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_configuracion.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_iniciosesion.xml" value="0.14709569577935647" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_main.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_perfil.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/amigos_view.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.2025" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/round_button.xml" value="0.158" />

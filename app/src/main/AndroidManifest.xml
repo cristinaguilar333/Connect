@@ -30,9 +30,7 @@
         <activity
             android:name=".AmigosActivity"
             android:exported="false" />
-        <activity
-            android:name=".amigos"
-            android:exported="false" />
+
         <activity
             android:name=".CrearCuenta"
             android:exported="false" />
