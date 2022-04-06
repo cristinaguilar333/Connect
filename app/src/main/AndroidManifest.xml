@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+            android:name=".NotasRapidasActivity"
+            android:exported="false" />
+        <activity
             android:name=".menu_chat"
             android:exported="false" />
         <activity
