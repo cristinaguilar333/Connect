@@ -13,7 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:scaleType="fitXY"
-        android:src="@drawable/encabezado" />
+        android:src="@drawable/encabezado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ImageButton
         android:id="@+id/imageButton"
         android:backgroundTint="@color/colorprincipal"
