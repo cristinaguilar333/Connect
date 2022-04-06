@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+            android:name=".Calendario"
+            android:exported="false"
+            android:label="@string/title_activity_calendario" />
+        <activity
             android:name=".ChatActivity"
             android:exported="false" />
         <activity
