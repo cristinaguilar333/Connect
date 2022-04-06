@@ -24,7 +24,7 @@ class ChatActivity : AppCompatActivity() {
         listView.adapter=adaptador
 
 
-        val accesoRapido : TextView = findViewById(R.id.tvChat)
+        val accesoRapido : TextView = findViewById(R.id.tvAccesoRapido)
         val calendario: TextView = findViewById(R.id.tvCalendario)
         val ajustes : ImageButton = findViewById(R.id.btnAjustes)
         val amigos : ImageButton = findViewById(R.id.btnAmigos)
