@@ -11,9 +11,9 @@ class documento : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_documento)
 
-        val volver : ImageButton = findViewById(R.id.btnVolver3)
+        val volver : ImageButton = findViewById(R.id.btnVolverDoc)
         volver.setOnClickListener{
-            var intent : Intent = Intent(this,chatIndividual::class.java)
+            var intent : Intent = Intent(this,menu_chat::class.java)
             startActivity(intent)
         }
     }

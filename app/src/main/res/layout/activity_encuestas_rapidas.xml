@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/circulo" />
 
     <ImageButton
-        android:id="@+id/btnVolver1"
+        android:id="@+id/btnVolverEncuesta"
         android:layout_width="45dp"
         android:layout_height="55dp"
         android:backgroundTint="@color/colorprincipal"
