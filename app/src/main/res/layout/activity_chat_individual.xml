@@ -13,48 +13,53 @@
         android:layout_height="110dp"
         android:scaleType="fitXY"
         android:src="@drawable/encabezado"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btnVolver1"
         android:layout_width="45dp"
         android:layout_height="55dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/colorprincipal"
-        app:srcCompat="@drawable/flechachica"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imagenChat"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flechachica" />
 
     <TextView
         android:id="@+id/nombrechat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/montserratbold"
         android:text="Nombre chat"
         android:textColor="@color/inputtexto"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintStart_toStartOf="@+id/integrantes"
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado" />
 
     <TextView
         android:id="@+id/integrantes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="196dp"
         android:fontFamily="@font/montserratregular"
         android:text="Integrantes"
         android:textColor="@color/inputtexto"
         android:textSize="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/nombrechat"
-        tools:layout_editor_absoluteX="142dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrechat" />
 
     <View
-            android:id="@+id/messagebar"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:background="@drawable/bottomnav_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+        android:id="@+id/messagebar"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@drawable/bottomnav_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <EditText
@@ -62,15 +67,17 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_marginStart="65dp"
+
         android:layout_weight=".5"
         android:background="@drawable/round_button"
-
         android:backgroundTint="@color/white"
         android:inputType="textShortMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintBottom_toBottomOf="@+id/messagebar"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="@+id/messagebar"
-        tools:layout_editor_absoluteY="691dp" />
+        app:layout_constraintTop_toTopOf="@+id/messagebar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_messages"
@@ -79,9 +86,10 @@
         android:layout_above="@id/messagebar"
 
         android:layout_marginTop="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
-        tools:itemCount="20"
 
+        tools:itemCount="20"
         tools:listitem="@layout/message_item" />
 
 
@@ -107,57 +115,61 @@
         android:id="@+id/btnAudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorprincipal"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/messagebar"
         app:layout_constraintStart_toEndOf="@+id/btnImagen"
-        app:srcCompat="@drawable/audiopequeno"
-        tools:layout_editor_absoluteY="685dp" />
+        app:srcCompat="@drawable/audiopequeno" />
 
     <ImageButton
         android:id="@+id/btnImagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:backgroundTint="@color/colorprincipal"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnDoc"
-        app:srcCompat="@drawable/imagenpequena"
-        tools:layout_editor_absoluteY="689dp" />
+        app:srcCompat="@drawable/imagenpequena" />
 
     <ImageButton
         android:id="@+id/btnDoc"
         android:layout_width="39dp"
         android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/colorprincipal"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/messagebar"
         app:layout_constraintStart_toStartOf="@+id/messagebar"
-        app:srcCompat="@drawable/docpequeno"
-        tools:layout_editor_absoluteY="686dp" />
+        app:srcCompat="@drawable/docpequeno" />
 
     <ImageButton
         android:id="@+id/btnVideo"
         android:layout_width="66dp"
         android:layout_height="44dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/colorprincipal"
-        app:layout_constraintStart_toEndOf="@+id/nombrechat"
-        app:srcCompat="@drawable/videomediano"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintStart_toEndOf="@+id/integrantes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/videomediano" />
 
     <ImageButton
         android:id="@+id/btnmenupuntos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/colorprincipal"
         app:layout_constraintStart_toEndOf="@+id/btnVideo"
-        app:srcCompat="@drawable/menupuntosmed"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menupuntosmed" />
 
     <ImageView
         android:id="@+id/imagenChat"
         android:layout_width="70dp"
         android:layout_height="71dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/nombrechat"
         app:srcCompat="@drawable/circulo"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

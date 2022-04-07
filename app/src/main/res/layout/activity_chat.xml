@@ -163,10 +163,13 @@
         android:id="@+id/botonchatIndv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
         android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listChat_view"
-        app:srcCompat="@drawable/nuevogrupo"
-        tools:layout_editor_absoluteX="176dp" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nuevogrupo" />
 
     //Pie de pagina
 

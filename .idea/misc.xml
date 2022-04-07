@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.275" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_chat.xml" value="0.275" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/activity_chat_individual.xml" value="0.33" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/chats_view.xml" value="0.27049180327868855" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/bottomnav_bg.xml" value="0.193" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.2025" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />

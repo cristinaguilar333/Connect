@@ -2,12 +2,14 @@ package equipo.uno.connect
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import android.widget.AdapterView.OnItemClickListener
+import androidx.appcompat.app.AppCompatActivity
+
 
 class ChatActivity : AppCompatActivity() {
     var listaChats = ArrayList<Chat>()
@@ -37,16 +39,18 @@ class ChatActivity : AppCompatActivity() {
         val btnperfil : ImageButton = findViewById(R.id.btnPerfil)
 
 
-        chats.setOnClickListener{
-            var intent : Intent = Intent(this,chatIndividual::class.java)
+
+        chats.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
+            // Position es el indice del elemento del ListView donde hacemos click
+            var intent : Intent = Intent(this, chatIndividual::class.java)
             startActivity(intent)
-        }
+        })
 
 
-        chatIn.setOnClickListener {
-            var intent : Intent = Intent(this,chatIndividual::class.java)
-            startActivity(intent)
-        }
+        //chatIn.setOnClickListener {
+         //   var intent : Intent = Intent(this,chatIndividual::class.java)
+         //   startActivity(intent)
+       // }
 
 
         accesoRapido.setOnClickListener {
