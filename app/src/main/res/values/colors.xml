@@ -10,6 +10,7 @@
 
     //colores
     <color name="colorprincipal">#8AACCB</color>
+    <color name="colorEncabezado">#8AACCB</color> // Falta modificar este color no se que color era JP
     <color name="textooscuro">#292929</color>
     <color name="textomedio">#A6A6A6</color>
     <color name="inputtexto">#E5E5E5</color>
