@@ -21,7 +21,7 @@ class Registro : AppCompatActivity() {
         }
 
         btnIniciaSesion.setOnClickListener {
-            var intent:Intent = Intent(this, activity_iniciosesion::class.java)
+            var intent:Intent = Intent(this, InicioSesionActivity::class.java)
             startActivity(intent)
         }
     }
