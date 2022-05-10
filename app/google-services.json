@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "708945014241",
+    "project_id": "connect-8f942",
+    "storage_bucket": "connect-8f942.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708945014241:android:6af4663f0b4d9a4466b6a0",
+        "android_client_info": {
+          "package_name": "equipo.uno.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708945014241-n91fg5ahhvboor19ik69h8pgviosdhe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5TgLghCQz6-Lc3-QOm9UzRu93jLzR75s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708945014241-n91fg5ahhvboor19ik69h8pgviosdhe5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

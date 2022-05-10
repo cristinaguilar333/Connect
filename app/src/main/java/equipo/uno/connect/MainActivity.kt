@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val btnEmpezar : Button = findViewById(R.id.btnEmpezar)
        btnEmpezar.setOnClickListener {
-        var intent : Intent = Intent(this, InicioSesionActivity::class.java)
+        var intent : Intent = Intent(this, Registro::class.java)
       startActivity(intent)
        }
     }
