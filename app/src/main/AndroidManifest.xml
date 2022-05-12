@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Connect">
         <activity
+            android:name=".CrearNota"
+            android:exported="false" />
+        <activity
             android:name=".MultimediaActivity"
             android:exported="false" />
         <activity
