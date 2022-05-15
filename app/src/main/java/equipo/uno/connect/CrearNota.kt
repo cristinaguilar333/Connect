@@ -6,17 +6,41 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import com.google.firebase.database.FirebaseDatabase
 
 class CrearNota : AppCompatActivity() {
+
+    val database = FirebaseDatabase.getInstance()
+    var ref = database.getReference("https://connect-8f942-default-rtdb.firebaseio.com/")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_nota)
 
 
         val volver : TextView = findViewById(R.id.btnCancelar)
+        val guardar : TextView = findViewById(R.id.btnGuardarNota)
+
         volver.setOnClickListener{
             var intent : Intent = Intent(this,NotasRapidasActivity::class.java)
             startActivity(intent)
         }
+
+        guardar.setOnClickListener {
+            val contenido= findViewById<TextView>(R.id.etNota).text.toString()
+            val titulo= findViewById<TextView>(R.id.etTituloNota).text.toString()
+
+            createNote(contenido, titulo);
+        }
+
     }
+
+    private fun createNote(contenido : String, titulo :String){
+        val nota = Nota(titulo, contenido)
+        ref = database.getReference().child("Nota")
+        ref.setValue(nota)
+
+    }
+
+
 }

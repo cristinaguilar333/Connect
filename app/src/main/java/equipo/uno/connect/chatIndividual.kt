@@ -6,8 +6,11 @@ import android.os.Bundle
 import android.provider.Settings
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import equipo.uno.connect.data.Message
 import equipo.uno.connect.ui.MessagingAdapter
 import equipo.uno.connect.utils.BotResponse
@@ -16,6 +19,8 @@ import equipo.uno.connect.utils.Constants.SEND_ID
 import equipo.uno.connect.utils.Time
 import kotlinx.android.synthetic.main.activity_chat_individual.*
 import kotlinx.coroutines.*
+import java.sql.Time
+import java.util.*
 
 class chatIndividual : AppCompatActivity() {
 
@@ -25,6 +30,12 @@ class chatIndividual : AppCompatActivity() {
     private lateinit var adapter:MessagingAdapter
     private val botList = listOf("Peter", "Francesca", "Luigi","Igor")
 
+    //AAAAA
+    private lateinit var auth: FirebaseAuth
+
+    val database = FirebaseDatabase.getInstance()
+    var ref = database.getReference("https://connect-8f942-default-rtdb.firebaseio.com/")
+    ///
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +57,15 @@ class chatIndividual : AppCompatActivity() {
             var intent : Intent = Intent(this,ChatActivity::class.java)
             startActivity(intent)
         }
+
+        ///aaaaa
+        btnEnviar.setOnClickListener{
+            val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
+            val usuario : String = auth.currentUser.toString()
+            createMensaje(contenido, usuario);
+
+        }
+
     }
 
     private fun clickEvents(){
@@ -129,5 +149,14 @@ class chatIndividual : AppCompatActivity() {
                 rv_messages.scrollToPosition(adapter.itemCount-1)
             }
         }
+    }
+
+    private fun createMensaje(contenido : String, rem :String){
+        val currentTime = Calendar.getInstance().time
+
+        val mensaje = Mensaje1(contenido, rem, 1, currentTime as Time)
+        ref = database.getReference().child("Mensaje")
+        ref.setValue(mensaje)
+
     }
 }
