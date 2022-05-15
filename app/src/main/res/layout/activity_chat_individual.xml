@@ -53,6 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombrechat" />
 
+
     <View
         android:id="@+id/messagebar"
         android:layout_width="wrap_content"
@@ -79,6 +80,7 @@
         app:layout_constraintStart_toStartOf="@+id/messagebar"
         app:layout_constraintTop_toTopOf="@+id/messagebar" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_messages"
         android:layout_width="match_parent"
@@ -89,9 +91,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
 
+        app:layout_constraintVertical_bias="1.0"
         tools:itemCount="20"
+        tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/message_item" />
-
 
     <RelativeLayout
         android:id="@+id/idRLMsg"
@@ -105,11 +108,11 @@
         android:id="@+id/btnEnviar"
         android:layout_width="59dp"
         android:layout_height="50dp"
-        android:layout_marginStart="340dp"
-        app:layout_constraintStart_toStartOf="@+id/messagebar"
+        android:layout_marginStart="336dp"
         android:backgroundTint="@color/colorprincipal"
-        app:srcCompat="@drawable/enviarchico"
-        tools:layout_editor_absoluteY="675dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/messagebar"
+        app:srcCompat="@drawable/enviarchico" />
 
     <ImageButton
         android:id="@+id/btnAudio"

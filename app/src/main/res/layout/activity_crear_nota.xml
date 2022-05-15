@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratbold"
         android:text="Título"
-        android:paddingRight="@dimen/_5ssp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
         android:textColor="@color/textooscuro"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
