@@ -112,7 +112,7 @@
         android:background="@drawable/botones"
         android:backgroundTint="@color/elementosclaros"
         android:text="CREAR CUENTA"
-        android:textColor="@color/azul70"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
