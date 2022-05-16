@@ -9,18 +9,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 import equipo.uno.connect.data.Message
 import equipo.uno.connect.ui.MessagingAdapter
 import equipo.uno.connect.utils.BotResponse
 import equipo.uno.connect.utils.Constants.RECEIVE_ID
 import equipo.uno.connect.utils.Constants.SEND_ID
-import equipo.uno.connect.utils.Time.timeStamp
 import kotlinx.android.synthetic.main.activity_chat_individual.*
 import kotlinx.android.synthetic.main.activity_menu_chat.*
 import kotlinx.coroutines.*
 import java.sql.Time
 import java.util.*
+
 
 class chatIndividual : AppCompatActivity() {
 
@@ -33,6 +35,7 @@ class chatIndividual : AppCompatActivity() {
     //AAAAA
     private lateinit var auth: FirebaseAuth
 
+
     val database = FirebaseDatabase.getInstance()
     var ref = database.getReference("connect")
     ///
@@ -43,6 +46,8 @@ class chatIndividual : AppCompatActivity() {
 
         recyclerView()
         clickEvents()
+
+        auth = Firebase.auth
 
         val random = (0..3).random()
         customBotMessage("Hola! estas hablando con ${botList[random]}, en que te ayudo?")
@@ -67,7 +72,7 @@ class chatIndividual : AppCompatActivity() {
         ///aaaaa
         btnEnviar.setOnClickListener{
             val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
-            val usuario : String = auth.currentUser.toString()
+            val usuario : String = FirebaseAuth.getInstance().currentUser as String
             createMensaje(contenido, usuario);
 
         }
@@ -157,11 +162,10 @@ class chatIndividual : AppCompatActivity() {
         }
     }
 
-    private fun createMensaje(contenido : String, rem :String){
+    private fun createMensaje(contenido : String, usuario :String){
         val currentTime = Calendar.getInstance().time
-
-        val mensaje = Mensaje1(contenido, rem, 1, currentTime as Time)
-        ref = database.getReference().child("Mensaje")
+        val mensaje = Mensaje1(contenido, usuario, 1, currentTime as Time)
+        ref = database.getReference().child("Mensaje").push()
         ref.setValue(mensaje)
 
     }
