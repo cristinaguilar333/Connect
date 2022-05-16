@@ -28,7 +28,7 @@ class ChatActivity : AppCompatActivity() {
 
 
 
-        val chatIn : ImageButton= findViewById(R.id.botonchatIndv)
+        //val chatIn : ImageButton= findViewById(R.id.botonchatIndv)
 
         val chats : ListView=findViewById(R.id.listChat_view)
 
