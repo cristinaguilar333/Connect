@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginEnd="276dp"
+        android:layout_marginEnd="284dp"
         android:layout_marginBottom="65dp"
         android:fontFamily="@font/montserratregular"
         android:text="Acceso rápido"
@@ -36,14 +36,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/tvChat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="170dp"
-        android:layout_marginStart="184dp"
+        android:layout_marginStart="180dp"
         android:layout_marginRight="172dp"
         android:fontFamily="@font/montserratregular"
         android:text="Chat"
@@ -55,7 +55,7 @@
         app:layout_constraintRight_toRightOf="@id/tvCalendario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <TextView
         android:id="@+id/tvCalendario"
@@ -74,7 +74,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <ImageView
         android:id="@+id/ivLogo2"
@@ -158,18 +158,6 @@
         app:layout_constraintStart_toEndOf="@+id/btnAmigos"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:srcCompat="@drawable/perfil" />
-
-    <ImageButton
-        android:id="@+id/botonchatIndv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="176dp"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listChat_view"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/nuevogrupo" />
 
     //Pie de pagina
 
