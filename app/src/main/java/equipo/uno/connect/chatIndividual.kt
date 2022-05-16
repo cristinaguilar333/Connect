@@ -4,10 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -93,8 +90,8 @@ class chatIndividual : AppCompatActivity() {
         ///aaaaa
         btnEnviar.setOnClickListener{
             val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
-            val usuario : String = FirebaseAuth.getInstance().currentUser as String
-            createMensaje(contenido, usuario);
+
+            createMensaje(contenido);
 
         }
 
@@ -137,7 +134,7 @@ class chatIndividual : AppCompatActivity() {
                 delay(100)
 
                 withContext(Dispatchers.Main){
-                    rv_messages.scrollToPosition(adapter.itemCount - 1)
+                    //rv_messages.scrollToPosition(adapter.itemCount - 1)
                 }
             }
         }
@@ -145,9 +142,10 @@ class chatIndividual : AppCompatActivity() {
 
     private fun recyclerView(){
         adapter = MessagingAdapter()
-        rv_messages.adapter = adapter
-        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-
+        //rv_messages.adapter = adapter
+        //rv_messages.layoutManager = LinearLayoutManager(applicationContext)
+        rv_messages.adapter = adapter as ListAdapter
+        //rv_messages.layoutManager = LinearLayoutManager(applicationContext)
     }
 
     override fun onStart(){
@@ -156,7 +154,7 @@ class chatIndividual : AppCompatActivity() {
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main){
-                rv_messages.scrollToPosition(adapter.itemCount-1)
+                //rv_messages.scrollToPosition(adapter.itemCount-1)
             }
         }
     }
@@ -171,7 +169,7 @@ class chatIndividual : AppCompatActivity() {
             etMessage.setText("")
 
             adapter.insertMessage(Message(message, SEND_ID, timeStamp))
-            rv_messages.scrollToPosition(adapter.itemCount-1)
+            //rv_messages.scrollToPosition(adapter.itemCount-1)
 
             botResponse(message)
 
@@ -189,7 +187,7 @@ class chatIndividual : AppCompatActivity() {
                 //poner los mensajes en el adapter
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
-                rv_messages.scrollToPosition(adapter.itemCount-1)
+               // rv_messages.scrollToPosition(adapter.itemCount-1)
 
                 when(responde){
 
@@ -206,14 +204,14 @@ class chatIndividual : AppCompatActivity() {
                 messagesList.add(Message(message, RECEIVE_ID, timeStamp))
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
-                rv_messages.scrollToPosition(adapter.itemCount-1)
+                //rv_messages.scrollToPosition(adapter.itemCount-1)
             }
         }
     }
 
     private fun createMensaje(contenido : String, usuario :String){
-        val currentTime = Calendar.getInstance().time
-        val mensaje = Mensaje1(contenido, usuario, 1, currentTime as Time)
+        //val currentTime = Calendar.getInstance().time
+        val mensaje = Mensaje1(contenido)
         ref = database.getReference().child("Mensaje").push()
         ref.setValue(mensaje)
 
