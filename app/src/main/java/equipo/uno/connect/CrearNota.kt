@@ -11,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase
 class CrearNota : AppCompatActivity() {
 
     val database = FirebaseDatabase.getInstance()
-    var ref = database.getReference("https://connect-8f942-default-rtdb.firebaseio.com/")
+    var ref = database.getReference("connect")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,9 @@ class CrearNota : AppCompatActivity() {
             val titulo= findViewById<TextView>(R.id.etTituloNota).text.toString()
 
             createNote(contenido, titulo);
+
+            var intent : Intent = Intent(this,NotasRapidasActivity::class.java )
+            startActivity(intent)
         }
 
     }

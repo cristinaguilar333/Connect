@@ -37,21 +37,8 @@
         android:text="Nombre chat"
         android:textColor="@color/inputtexto"
         android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="@+id/integrantes"
-        app:layout_constraintTop_toTopOf="@+id/ivEncabezado" />
-
-    <TextView
-        android:id="@+id/integrantes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="196dp"
-        android:fontFamily="@font/montserratregular"
-        android:text="Integrantes"
-        android:textColor="@color/inputtexto"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrechat" />
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado"
+        tools:layout_editor_absoluteX="128dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_messages"
@@ -146,25 +133,14 @@
         app:srcCompat="@drawable/docpequeno" />
 
     <ImageButton
-        android:id="@+id/btnVideo"
-        android:layout_width="66dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/colorprincipal"
-        app:layout_constraintStart_toEndOf="@+id/integrantes"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/videomediano" />
-
-    <ImageButton
         android:id="@+id/btnmenupuntos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/colorprincipal"
-        app:layout_constraintStart_toEndOf="@+id/btnVideo"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menupuntosmed" />
+        app:srcCompat="@drawable/menupuntosmed"
+        tools:layout_editor_absoluteX="337dp" />
 
     <ImageView
         android:id="@+id/imagenChat"

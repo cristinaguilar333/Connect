@@ -11,7 +11,12 @@ class menu_chat : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val volver : ImageButton = findViewById(R.id.btnVolverMenupuntos)
+
+
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_menu_chat)
+
+        val volver : ImageButton = findViewById(R.id.btnVolverMenu)
         val multimedia1 : Button = findViewById(R.id.multimedia1)
         val multimedia2 : Button = findViewById(R.id.multimedia2)
         val multimedia3 : Button = findViewById(R.id.multimedia3)
@@ -28,9 +33,6 @@ class menu_chat : AppCompatActivity() {
 
         val encuesta : TextView = findViewById(R.id.encuesta)
         val btnencuesta : ImageButton = findViewById(R.id.btnEncuesta)
-
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_chat)
 
         encuesta.setOnClickListener{
             var intent : Intent = Intent(this,EncuestasRapidasActivity::class.java)

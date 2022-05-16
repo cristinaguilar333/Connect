@@ -1,12 +1,11 @@
 package equipo.uno.connect
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -18,6 +17,7 @@ import equipo.uno.connect.utils.Constants.RECEIVE_ID
 import equipo.uno.connect.utils.Constants.SEND_ID
 import equipo.uno.connect.utils.Time.timeStamp
 import kotlinx.android.synthetic.main.activity_chat_individual.*
+import kotlinx.android.synthetic.main.activity_menu_chat.*
 import kotlinx.coroutines.*
 import java.sql.Time
 import java.util.*
@@ -34,7 +34,7 @@ class chatIndividual : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     val database = FirebaseDatabase.getInstance()
-    var ref = database.getReference("https://connect-8f942-default-rtdb.firebaseio.com/")
+    var ref = database.getReference("connect")
     ///
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,6 +52,12 @@ class chatIndividual : AppCompatActivity() {
         val btnEnviar : ImageButton = findViewById(R.id.btnEnviar)
         val etMessage : EditText = findViewById(R.id.etMessage)
         val rv_messages : RecyclerView= findViewById(R.id.rv_messages)
+        val btnmenupuntos : ImageButton = findViewById(R.id.btnmenupuntos)
+
+        btnmenupuntos.setOnClickListener {
+            var intent : Intent = Intent(this, menu_chat::class.java)
+            startActivity(intent)
+        }
 
         volver.setOnClickListener{
             var intent : Intent = Intent(this,ChatActivity::class.java)
@@ -104,7 +110,7 @@ class chatIndividual : AppCompatActivity() {
 
     private fun sendMessage(){
         val message = etMessage.text.toString()
-        val timeStamp = Time.timeStamp()
+        val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
 
         if(message.isNotEmpty()){
             messagesList.add(Message(message, SEND_ID, timeStamp))
@@ -119,7 +125,7 @@ class chatIndividual : AppCompatActivity() {
     }
 
     private fun botResponse(message:String){
-        val timeStamp = Time.timeStamp()
+        val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main){
@@ -142,7 +148,7 @@ class chatIndividual : AppCompatActivity() {
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main){
-                val timeStamp = Time.timeStamp()
+                val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
                 messagesList.add(Message(message, RECEIVE_ID, timeStamp))
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
