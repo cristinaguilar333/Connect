@@ -42,7 +42,6 @@ class CrearNota : AppCompatActivity() {
         val nota = Nota(titulo, contenido)
         ref = database.getReference().child("Nota").push()
         ref.setValue(nota)
-        ref.push()
     }
 
 
