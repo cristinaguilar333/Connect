@@ -45,24 +45,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/ivEncabezado"
-        android:visibility="invisible"/>
-
-    <ListView
         android:id="@+id/rv_messages"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_above="@id/messagebar"
-
-        android:layout_marginTop="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
-
-
+        android:layout_marginTop="1dp"
         app:layout_constraintVertical_bias="1.0"
         tools:itemCount="20"
         tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/message_item"
-        />
+        tools:listitem="@layout/message_item"/>
+
+
 
 
     <View
