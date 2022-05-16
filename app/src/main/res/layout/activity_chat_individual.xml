@@ -42,6 +42,12 @@
         app:layout_constraintTop_toTopOf="@+id/ivEncabezado" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivEncabezado"
+        android:visibility="invisible"/>
+
+    <ListView
         android:id="@+id/rv_messages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,10 +57,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
 
+
         app:layout_constraintVertical_bias="1.0"
         tools:itemCount="20"
         tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/message_item" />
+        tools:listitem="@layout/message_item"
+        />
+
 
     <View
         android:id="@+id/messagebar"
@@ -132,6 +141,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/messagebar"
         app:layout_constraintStart_toStartOf="@+id/messagebar"
         app:srcCompat="@drawable/docpequeno" />
+
 
     <ImageButton
         android:id="@+id/btnmenupuntos"
