@@ -9,7 +9,7 @@
     tools:context=".CrearCuenta">
 
     <Button
-        android:id="@+id/btnComienza"
+        android:id="@+id/btnEmpezar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="131dp"
@@ -69,17 +69,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="122dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="149dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCreaCuenta"
-        app:srcCompat="@drawable/circulo" />
+        app:civ_border_color="@color/white"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -99,15 +98,15 @@
         android:id="@+id/tvUsuario2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/montserratbold"
         android:text="Nombre de usuario"
-        android:textColor="@color/textooscuro"
 
+        android:textColor="@color/textooscuro"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
