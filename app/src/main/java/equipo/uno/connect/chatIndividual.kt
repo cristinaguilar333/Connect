@@ -134,7 +134,7 @@ class chatIndividual : AppCompatActivity() {
                 delay(100)
 
                 withContext(Dispatchers.Main){
-                    //rv_messages.scrollToPosition(adapter.itemCount - 1)
+                   rv_messages.scrollToPosition(adapter.itemCount - 1)
                 }
             }
         }
@@ -144,8 +144,11 @@ class chatIndividual : AppCompatActivity() {
         adapter = MessagingAdapter()
         //rv_messages.adapter = adapter
         //rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-        rv_messages.adapter = adapter as ListAdapter
-        //rv_messages.layoutManager = LinearLayoutManager(applicationContext)
+
+
+        rv_messages.adapter = adapter
+
+        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
     }
 
     override fun onStart(){
@@ -154,7 +157,7 @@ class chatIndividual : AppCompatActivity() {
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main){
-                //rv_messages.scrollToPosition(adapter.itemCount-1)
+                rv_messages.scrollToPosition(adapter.itemCount-1)
             }
         }
     }
@@ -169,7 +172,7 @@ class chatIndividual : AppCompatActivity() {
             etMessage.setText("")
 
             adapter.insertMessage(Message(message, SEND_ID, timeStamp))
-            //rv_messages.scrollToPosition(adapter.itemCount-1)
+            rv_messages.scrollToPosition(adapter.itemCount-1)
 
             botResponse(message)
 
@@ -187,7 +190,7 @@ class chatIndividual : AppCompatActivity() {
                 //poner los mensajes en el adapter
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
-               // rv_messages.scrollToPosition(adapter.itemCount-1)
+               rv_messages.scrollToPosition(adapter.itemCount-1)
 
                 when(responde){
 
@@ -204,7 +207,7 @@ class chatIndividual : AppCompatActivity() {
                 messagesList.add(Message(message, RECEIVE_ID, timeStamp))
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
-                //rv_messages.scrollToPosition(adapter.itemCount-1)
+                rv_messages.scrollToPosition(adapter.itemCount-1)
             }
         }
     }
