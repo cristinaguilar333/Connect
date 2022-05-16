@@ -91,7 +91,8 @@ class chatIndividual : AppCompatActivity() {
         btnEnviar.setOnClickListener{
             val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
 
-            createMensaje(contenido);
+            createMensaje(contenido)
+            sendMessage()
 
         }
 
