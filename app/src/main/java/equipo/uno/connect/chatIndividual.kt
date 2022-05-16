@@ -16,7 +16,7 @@ import equipo.uno.connect.ui.MessagingAdapter
 import equipo.uno.connect.utils.BotResponse
 import equipo.uno.connect.utils.Constants.RECEIVE_ID
 import equipo.uno.connect.utils.Constants.SEND_ID
-import equipo.uno.connect.utils.Time
+import equipo.uno.connect.utils.Time.timeStamp
 import kotlinx.android.synthetic.main.activity_chat_individual.*
 import kotlinx.coroutines.*
 import java.sql.Time

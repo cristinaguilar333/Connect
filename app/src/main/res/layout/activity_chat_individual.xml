@@ -53,6 +53,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombrechat" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/messagebar"
+
+        android:layout_marginTop="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
+
+        app:layout_constraintVertical_bias="1.0"
+        tools:itemCount="20"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/message_item" />
 
     <View
         android:id="@+id/messagebar"
@@ -76,31 +90,16 @@
         android:inputType="textShortMessage"
         app:layout_constraintBottom_toBottomOf="@+id/messagebar"
         app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/messagebar"
         app:layout_constraintTop_toTopOf="@+id/messagebar" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_messages"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/messagebar"
-
-        android:layout_marginTop="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
-
-        app:layout_constraintVertical_bias="1.0"
-        tools:itemCount="20"
-        tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/message_item" />
 
     <RelativeLayout
         android:id="@+id/idRLMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toTopOf="@+id/ivEncabezado">
 
     </RelativeLayout>
 
@@ -118,6 +117,7 @@
         android:id="@+id/btnAudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/messagebar"
         app:layout_constraintStart_toEndOf="@+id/btnImagen"
@@ -170,9 +170,10 @@
         android:id="@+id/imagenChat"
         android:layout_width="70dp"
         android:layout_height="71dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/nombrechat"
-        app:srcCompat="@drawable/circulo"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circulo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
