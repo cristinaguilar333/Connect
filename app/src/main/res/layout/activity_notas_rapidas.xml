@@ -59,21 +59,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
 
-    <TextView
-        android:id="@+id/integrantes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/montserratregular"
-        android:text="Integrantes"
-        android:textColor="@color/inputtexto"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrechat"
-        app:layout_constraintVertical_bias="0.0" />
     //Encabezado
 
     <TextView

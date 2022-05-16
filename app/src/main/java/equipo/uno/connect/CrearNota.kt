@@ -40,7 +40,7 @@ class CrearNota : AppCompatActivity() {
 
     private fun createNote(contenido : String, titulo :String){
         val nota = Nota(titulo, contenido)
-        ref = database.getReference().child("Nota")
+        ref = database.getReference().child("Nota").push()
         ref.setValue(nota)
         ref.push()
     }
