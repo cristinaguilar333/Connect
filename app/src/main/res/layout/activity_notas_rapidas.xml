@@ -82,7 +82,7 @@
         android:backgroundTint="@color/amarillo70"
         android:gravity="center|left"
         android:fontFamily="@font/montserratregular"
-        android:text=" Pendientes"
+
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

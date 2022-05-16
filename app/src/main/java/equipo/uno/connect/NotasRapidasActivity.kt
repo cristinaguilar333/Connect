@@ -49,8 +49,8 @@ class NotasRapidasActivity : AppCompatActivity() {
     }
     private fun writeMark(mark:Nota){
         var listV : TextView = findViewById(R.id.textView3)
-        val text = listV.text.toString() + mark.toString() + "\n"
-        listV.text = text
+        //val text = listV.text.toString() + mark.toString() + "\n"
+        listV.setText(listV.text.toString() + mark.toString() + "\n")
     }
 
 }
