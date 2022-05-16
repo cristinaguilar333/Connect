@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class NotasRapidasActivity : AppCompatActivity() {
     public final var REQUEST_CODE_NOTE : Int = 1
-    private val notaRef = FirebaseDatabase.getInstance().getReference("Nota")
+    private val notaRef = FirebaseDatabase.getInstance().getReference("connect")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
