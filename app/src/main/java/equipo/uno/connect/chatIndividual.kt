@@ -1,10 +1,13 @@
 package equipo.uno.connect
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,7 +15,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 import equipo.uno.connect.data.Message
+import equipo.uno.connect.databinding.ActivityChatIndividualBinding
+import equipo.uno.connect.databinding.ActivityCrearCuentaBinding
 import equipo.uno.connect.ui.MessagingAdapter
 import equipo.uno.connect.utils.BotResponse
 import equipo.uno.connect.utils.Constants.RECEIVE_ID
@@ -25,6 +32,11 @@ import java.util.*
 
 
 class chatIndividual : AppCompatActivity() {
+
+    private lateinit var storageReference: StorageReference
+    private lateinit var imageUri : Uri
+
+    private lateinit var binding : ActivityChatIndividualBinding
 
     private val TAG = "chatIndividual"
     var messagesList = mutableListOf<Message>()
@@ -43,6 +55,15 @@ class chatIndividual : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_individual)
+
+        binding = ActivityChatIndividualBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        binding.btnImagen.setOnClickListener{
+            seleccionarImagen()
+
+        }
 
         recyclerView()
         clickEvents()
@@ -78,6 +99,33 @@ class chatIndividual : AppCompatActivity() {
         }
 
     }
+
+    ///images
+
+    private fun seleccionarImagen() {
+        val intent = Intent()
+        intent.type = "images/*"
+        intent.action = Intent.ACTION_GET_CONTENT
+
+        startActivityForResult(intent, 100)
+
+    }
+
+    fun onclick(view: View) {
+        cargarImagen()
+    }
+
+    private fun cargarImagen(){
+        imageUri = Uri.parse("android.resource://$packageName/${R.drawable.send_round_box}")
+        storageReference = FirebaseStorage.getInstance().getReference("connect/"+auth.currentUser?.uid)
+        storageReference.putFile(imageUri).addOnSuccessListener {
+            Toast.makeText(this@chatIndividual, "Imagen enviada", Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener{
+            Toast.makeText(this@chatIndividual, "No se pudo enviar enviar la imagen", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    ///images
 
     private fun clickEvents(){
         btnEnviar.setOnClickListener{
@@ -118,6 +166,7 @@ class chatIndividual : AppCompatActivity() {
         val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
 
         if(message.isNotEmpty()){
+
             messagesList.add(Message(message, SEND_ID, timeStamp))
             etMessage.setText("")
 
