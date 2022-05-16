@@ -32,13 +32,14 @@
         android:id="@+id/nombrechat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
         android:fontFamily="@font/montserratbold"
         android:text="Nombre chat"
         android:textColor="@color/inputtexto"
         android:textSize="20dp"
-        app:layout_constraintTop_toTopOf="@+id/ivEncabezado"
-        tools:layout_editor_absoluteX="128dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btnmenupuntos"
+        app:layout_constraintTop_toTopOf="@+id/ivEncabezado" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_messages"
@@ -138,9 +139,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/colorprincipal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menupuntosmed"
-        tools:layout_editor_absoluteX="337dp" />
+        app:srcCompat="@drawable/menupuntosmed" />
 
     <ImageView
         android:id="@+id/imagenChat"
@@ -149,6 +150,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/nombrechat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circulo" />
 
