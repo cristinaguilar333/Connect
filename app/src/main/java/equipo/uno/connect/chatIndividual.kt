@@ -209,7 +209,7 @@ class chatIndividual : AppCompatActivity() {
         }
     }
 
-    private fun createMensaje(contenido : String{
+    private fun createMensaje(contenido : String){
         //val currentTime = Calendar.getInstance().time
         val mensaje = Mensaje1(contenido)
         ref = database.getReference().child("Mensaje").push()
