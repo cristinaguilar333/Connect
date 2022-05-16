@@ -87,15 +87,6 @@ class chatIndividual : AppCompatActivity() {
             startActivity(intent)
         }
 
-        ///aaaaa
-        btnEnviar.setOnClickListener{
-            val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
-
-            createMensaje(contenido)
-            sendMessage()
-
-        }
-
     }
 
     ///images
@@ -127,6 +118,10 @@ class chatIndividual : AppCompatActivity() {
 
     private fun clickEvents(){
         btnEnviar.setOnClickListener{
+            val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
+
+            createMensaje(contenido)
+
             sendMessage()
         }
 
