@@ -91,38 +91,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.313" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="296dp"
-        android:layout_height="40dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@color/amarillo70"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="center|left"
-        android:text=" Biología"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="296dp"
-        android:layout_height="40dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@color/amarillo70"
-        android:gravity="center|left"
-        android:fontFamily="@font/montserratregular"
-        android:text=" Ecología"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/btn_AgregarNotaRapida"
         android:layout_width="56dp"

@@ -10,5 +10,6 @@
     <string name="sonido">Notificaciones, sonidos \n en la aplicación, Tono de \n llamada</string>
     <string name="tema">Tema claro - Tema \n oscuro</string>
     <string name="ayuda">Al pulsar el botón se le \n enviará un correo a nuestro \n servicio al cliente quien se \n encargará de contactarte y \n verificar el problema</string>
+    <string name="t_tulo">Título</string>
 
 </resources>
