@@ -34,17 +34,16 @@
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/documentoitem.xml" value="0.275" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/message_item.xml" value="0.27049180327868855" />
         <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/multimediaitem.xml" value="0.275" />
+        <entry key="..\:/Users/carmi/Documents/Connect/app/src/main/res/layout/notas_item.xml" value="0.275" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/encabezado.xml" value="0.2025" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/receive_round_box.xml" value="0.127" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/round_button.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/drawable/splash.xml" value="0.158" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/font/montserrat.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_acceso_rapido.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_amigos.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_calendario.xml" value="0.1947463768115942" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat.xml" value="0.15081521739130435" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat_individual.xml" value="0.18" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_chat_individual.xml" value="0.225" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_configuracion.xml" value="0.33" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Connect/app/src/main/res/layout/activity_crear_nota.xml" value="0.25" />
