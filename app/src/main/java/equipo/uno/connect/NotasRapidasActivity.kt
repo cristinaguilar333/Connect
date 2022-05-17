@@ -14,26 +14,28 @@ import equipo.uno.connect.databinding.ActivityNotasRapidasBinding
 import kotlinx.android.synthetic.main.activity_notas_rapidas.*
 
 class NotasRapidasActivity : AppCompatActivity() {
-    public final var REQUEST_CODE_NOTE : Int = 1
+    public final var REQUEST_CODE_NOTE: Int = 1
     private val notaRef = FirebaseDatabase.getInstance().getReference("connect")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notas_rapidas)
 
-        val addNote : ImageButton = findViewById(R.id.btn_AgregarNotaRapida)
-        addNote.setOnClickListener{
-            var intent : Intent = Intent(this,CrearNota::class.java)
+        val addNote: ImageButton = findViewById(R.id.btn_AgregarNotaRapida)
+        addNote.setOnClickListener {
+            var intent: Intent = Intent(this, CrearNota::class.java)
             startActivity(intent)
         }
 
-        notaRef.addChildEventListener(object : ChildEventListener{
+      
+        notaRef.addChildEventListener(object : ChildEventListener {
             override fun onChildAdded(dataSnapshot: DataSnapshot, previousChildName: String?) {
                 val nota = dataSnapshot.getValue(Nota::class.java)
-                if(nota != null) {
+                if (nota != null) {
                     writeMark(nota)
                 }
             }
+
             override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
             override fun onChildRemoved(snapshot: DataSnapshot) {}
             override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
@@ -42,17 +44,18 @@ class NotasRapidasActivity : AppCompatActivity() {
         })
 
 
-        val volver : ImageButton = findViewById(R.id.btnVolverNotas)
-        volver.setOnClickListener{
-            var intent : Intent = Intent(this,menu_chat::class.java)
+        val volver: ImageButton = findViewById(R.id.btnVolverNotas)
+        volver.setOnClickListener {
+            var intent: Intent = Intent(this, menu_chat::class.java)
             startActivity(intent)
         }
     }
 
-    private fun writeMark(mark:Nota){
-        var listV : TextView = findViewById(R.id.list_textView) as TextView
+    private fun writeMark(mark: Nota) {
+        var listV: TextView = findViewById(R.id.list_textView) as TextView
         val text = listV.text.toString() + mark.toString() + "\n"
-        listV.text = text
+        //listV.text = text
+        list_textView.setText(text.toString())
 
 
     }
