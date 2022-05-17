@@ -35,10 +35,11 @@ class chatIndividual : AppCompatActivity() {
 
     private lateinit var binding : ActivityChatIndividualBinding
 
+    //chat
     private val TAG = "chatIndividual"
     var messagesList = mutableListOf<Message>()
 
-    private lateinit var adapter:MessagingAdapter
+    private lateinit var adapterM:MessagingAdapter
     private val botList = listOf("Peter", "Francesca", "Luigi","Igor")
 
     //AAAAA
@@ -104,6 +105,12 @@ class chatIndividual : AppCompatActivity() {
         cargarImagen()
     }
 
+    private fun recyclerView(){
+        adapterM = MessagingAdapter()
+        rv_messages.adapter = adapterM
+        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
+    }
+
     private fun cargarImagen(){
         imageUri = Uri.parse("android.resource://$packageName/${R.drawable.send_round_box}")
         storageReference = FirebaseStorage.getInstance().getReference("connect/"+auth.currentUser?.uid)
@@ -118,9 +125,6 @@ class chatIndividual : AppCompatActivity() {
 
     private fun clickEvents(){
         btnEnviar.setOnClickListener{
-            val contenido : String= findViewById<TextView>(R.id.etMessage).text.toString()
-
-            createMensaje(contenido)
 
             sendMessage()
         }
@@ -130,17 +134,13 @@ class chatIndividual : AppCompatActivity() {
                 delay(100)
 
                 withContext(Dispatchers.Main){
-                   rv_messages.scrollToPosition(adapter.itemCount - 1)
+                   rv_messages.scrollToPosition(adapterM.itemCount - 1)
                 }
             }
         }
     }
 
-    private fun recyclerView(){
-        adapter = MessagingAdapter()
-        rv_messages.adapter = adapter
-        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-    }
+
 
     override fun onStart(){
         super.onStart()
@@ -148,7 +148,7 @@ class chatIndividual : AppCompatActivity() {
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main){
-                rv_messages.scrollToPosition(adapter.itemCount-1)
+                rv_messages.scrollToPosition(adapterM.itemCount-1)
             }
         }
     }
@@ -158,12 +158,13 @@ class chatIndividual : AppCompatActivity() {
         val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
 
         if(message.isNotEmpty()){
+            createMensaje(message)
 
             messagesList.add(Message(message, SEND_ID, timeStamp))
             etMessage.setText("")
 
-            adapter.insertMessage(Message(message, SEND_ID, timeStamp))
-            rv_messages.scrollToPosition(adapter.itemCount-1)
+            adapterM.insertMessage(Message(message, SEND_ID, timeStamp))
+            rv_messages.scrollToPosition(adapterM.itemCount - 1)
 
             botResponse(message)
 
@@ -184,9 +185,9 @@ class chatIndividual : AppCompatActivity() {
                 //agregar a la lista de mensajes
                 messagesList.add(Message(responde, RECEIVE_ID, timeStamp))
                 //poner los mensajes en el adapter
-                adapter.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
+                adapterM.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
 
-               rv_messages.scrollToPosition(adapter.itemCount-1)
+               rv_messages.scrollToPosition(adapterM.itemCount-1)
 
             }
         }
@@ -198,9 +199,9 @@ class chatIndividual : AppCompatActivity() {
             withContext(Dispatchers.Main){
                 val timeStamp = equipo.uno.connect.utils.Time.timeStamp()
                 messagesList.add(Message(message, RECEIVE_ID, timeStamp))
-                adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
+                adapterM.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
-                rv_messages.scrollToPosition(adapter.itemCount-1)
+                rv_messages.scrollToPosition(adapterM.itemCount-1)
             }
         }
     }
