@@ -67,22 +67,25 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratbold"
         android:text="Notas rápidas"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        android:textAlignment="center"/>
+        app:layout_constraintVertical_bias="0.235" />
 
-    <TextView
-        android:id="@+id/list_textView"
-        android:layout_width="326dp"
-        android:layout_height="273dp"
-        android:layout_marginTop="40dp"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_notas"
+        android:layout_width="359dp"
+        android:layout_height="452dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="44dp" />
+        tools:listitem="@layout/notas_item" />
 
     <ImageButton
         android:id="@+id/btn_AgregarNotaRapida"
@@ -92,9 +95,9 @@
         android:src="@drawable/mas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.975" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
