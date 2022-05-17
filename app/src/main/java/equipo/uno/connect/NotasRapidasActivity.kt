@@ -11,11 +11,11 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import equipo.uno.connect.databinding.ActivityNotasRapidasBinding
+import kotlinx.android.synthetic.main.activity_notas_rapidas.*
 
 class NotasRapidasActivity : AppCompatActivity() {
     public final var REQUEST_CODE_NOTE : Int = 1
     private val notaRef = FirebaseDatabase.getInstance().getReference("connect")
-    private lateinit var binding : ActivityNotasRapidasBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,9 @@ class NotasRapidasActivity : AppCompatActivity() {
         notaRef.addChildEventListener(object : ChildEventListener{
             override fun onChildAdded(dataSnapshot: DataSnapshot, previousChildName: String?) {
                 val nota = dataSnapshot.getValue(Nota::class.java)
-                if(nota != null) writeMark(nota)
+                if(nota != null) {
+                    writeMark(nota)
+                }
             }
             override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
             override fun onChildRemoved(snapshot: DataSnapshot) {}
@@ -46,13 +48,12 @@ class NotasRapidasActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    private fun saveMarkFromForm(){
 
-    }
     private fun writeMark(mark:Nota){
-        var listV : TextView = findViewById(R.id.textView3)
-        //val text = listV.text.toString() + mark.toString() + "\n"
-        listV.setText(listV.text.toString() + mark.toString() + "\n")
+        var listV : TextView = findViewById(R.id.list_textView) as TextView
+        val text = listV.text.toString() + mark.toString() + "\n"
+        listV.text = text
+
 
     }
 
