@@ -49,16 +49,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imagePerfil"
-        android:layout_width="122dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="24dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/circulo" />
+        app:civ_border_color="@color/white"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -78,7 +78,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="44dp"
         android:layout_marginEnd="209dp"
         android:fontFamily="@font/montserratbold"
         android:text="Nombre de usuario"
@@ -88,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagePerfil" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <EditText
         android:id="@+id/etUsuario"

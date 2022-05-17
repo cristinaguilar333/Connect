@@ -25,6 +25,8 @@ class ChatActivity : AppCompatActivity() {
             ChatActivity.AdaptadorChat(this, listaChats)
         listView.adapter=adaptador
 
+        val nombreUsuario = intent.getStringExtra("nombreUsuario")
+
 
 
 
@@ -44,6 +46,7 @@ class ChatActivity : AppCompatActivity() {
             // Position es el indice del elemento del ListView donde hacemos click
             var intent : Intent = Intent(this, chatIndividual::class.java)
             intent.putExtra("nombre", "María")
+            intent.putExtra("nombreUsuario", nombreUsuario)
             startActivity(intent)
         })
 
