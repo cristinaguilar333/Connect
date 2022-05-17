@@ -77,15 +77,16 @@
         app:layout_constraintVertical_bias="0.235" />
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_notas"
-        android:layout_width="359dp"
-        android:layout_height="452dp"
-        android:layout_marginStart="36dp"
+    <TextView
+        android:id="@+id/tvNotas"
+        android:layout_width="374dp"
+        android:layout_height="343dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:listitem="@layout/notas_item" />
+        android:background="@color/colorVerde"
+        android:textSize="20sp"/>
 
     <ImageButton
         android:id="@+id/btn_AgregarNotaRapida"

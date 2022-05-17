@@ -33,6 +33,8 @@ class CrearNota : AppCompatActivity() {
             createNote(contenido, titulo);
 
             var intent : Intent = Intent(this,NotasRapidasActivity::class.java )
+            intent.putExtra("titulo", titulo)
+            intent.putExtra("contenido", contenido)
             startActivity(intent)
         }
 
