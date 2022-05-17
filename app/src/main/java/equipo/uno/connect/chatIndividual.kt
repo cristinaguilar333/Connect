@@ -177,12 +177,12 @@ class chatIndividual : AppCompatActivity() {
             withContext(Dispatchers.Main){
                 val responde = BotResponse.basicResponse(message)
                 //agregar a la lista de mensajes
-                messagesList.add(Message(message, RECEIVE_ID, timeStamp))
+                messagesList.add(Message(responde, RECEIVE_ID, timeStamp))
                 //poner los mensajes en el adapter
-                adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
+                adapter.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
 
                rv_messages.scrollToPosition(adapter.itemCount-1)
-                
+
             }
         }
     }
