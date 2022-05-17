@@ -56,7 +56,11 @@ class chatIndividual : AppCompatActivity() {
 
         binding = ActivityChatIndividualBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val nombre = intent.getStringExtra("nombre")
 
+        var nombreenchat : TextView = findViewById(R.id.nombrechat)
+
+        nombreenchat.setText(nombre)
 
         binding.btnImagen.setOnClickListener{
             seleccionarImagen()

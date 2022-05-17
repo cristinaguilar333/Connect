@@ -43,6 +43,7 @@ class ChatActivity : AppCompatActivity() {
         chats.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
             // Position es el indice del elemento del ListView donde hacemos click
             var intent : Intent = Intent(this, chatIndividual::class.java)
+            intent.putExtra("nombre", "María")
             startActivity(intent)
         })
 

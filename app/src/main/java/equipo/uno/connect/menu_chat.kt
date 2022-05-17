@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_menu_chat.*
 
 class menu_chat : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class menu_chat : AppCompatActivity() {
         val multimedia1 : Button = findViewById(R.id.multimedia1)
         val multimedia2 : Button = findViewById(R.id.multimedia2)
         val multimedia3 : Button = findViewById(R.id.multimedia3)
+        nombrechat.setText("María")
 
         val doc1 : Button = findViewById(R.id.doc1)
         val doc2 : Button = findViewById(R.id.doc2)
@@ -46,6 +48,7 @@ class menu_chat : AppCompatActivity() {
 
         notas.setOnClickListener{
             var intent : Intent = Intent(this,NotasRapidasActivity::class.java)
+            intent.putExtra("nombre", "María")
             startActivity(intent)
         }
 

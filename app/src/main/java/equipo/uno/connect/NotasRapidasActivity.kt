@@ -22,6 +22,7 @@ class NotasRapidasActivity : AppCompatActivity() {
     lateinit var binding: ActivityNotasRapidasBinding
     private lateinit var  empList : ArrayList<Nota>
     private lateinit var dbRef : DatabaseReference
+    var temporal : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,11 +33,14 @@ class NotasRapidasActivity : AppCompatActivity() {
 
         val titulo = intent.getStringExtra("titulo")
         val contenido = intent.getStringExtra("contenido")
+        val nombre = intent.getStringExtra("nombre")
+
+        nombrechat.setText(nombre)
 
 
-        tvNotas.setText(tvNotas.text.toString() + titulo + "\n" + contenido + "\n")
+        tvNotas.setText(temporal + titulo + "\n" + contenido + "\n")
 
-
+        temporal = tvNotas.text.toString()
 
 
         val addNote: ImageButton = findViewById(R.id.btn_AgregarNotaRapida)
