@@ -9,34 +9,32 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.database.ChildEventListener
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import equipo.uno.connect.databinding.ActivityNotasRapidasBinding
+import equipo.uno.connect.ui.NotaAdapter
 import kotlinx.android.synthetic.main.activity_notas_rapidas.*
 
 class NotasRapidasActivity : AppCompatActivity() {
     public final var REQUEST_CODE_NOTE: Int = 1
-    private val notaRef = FirebaseDatabase.getInstance().getReference("connect")
+    private val notaRef = FirebaseDatabase.getInstance().getReference("Nota")
     private lateinit var empRecyclerView : RecyclerView
     private lateinit var  tvLoadingData : TextView
     lateinit var binding: ActivityNotasRapidasBinding
     private lateinit var  empList : ArrayList<Nota>
+    private lateinit var dbRef : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notas_rapidas)
 
-        empRecyclerView = findViewById(R.id.rv_notas)
-        empRecyclerView.layoutManager = LinearLayoutManager(this)
-        empRecyclerView.setHasFixedSize(true)
-
-        empList = arrayListOf<Nota>()
-
-        getNotasData()
 
 
+
+        val titulo = intent.getStringExtra("titulo")
+        val contenido = intent.getStringExtra("contenido")
+
+
+        tvNotas.setText(tvNotas.text.toString() + titulo + "\n" + contenido + "\n")
 
 
 
@@ -71,9 +69,7 @@ class NotasRapidasActivity : AppCompatActivity() {
         }
     }
 
-    private fun getNotasData() {
-        empRecyclerView.visibility = View.GONE
-    }
+
 
 
 }
