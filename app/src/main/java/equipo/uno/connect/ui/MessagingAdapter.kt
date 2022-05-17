@@ -22,7 +22,7 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
             }
         }
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessagingAdapter.MessageViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
         return MessageViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.message_item, parent, false))
     }
 
@@ -34,6 +34,7 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
                 holder.itemView.tv_message.apply{
                     text = currentMessage.message
                     visibility = View.VISIBLE
+
                 }
 
                 holder.itemView.tv_message2.visibility = View.GONE
