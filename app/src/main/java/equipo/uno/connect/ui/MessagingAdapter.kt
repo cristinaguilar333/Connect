@@ -36,14 +36,14 @@ class MessagingAdapter: RecyclerView.Adapter<MessagingAdapter.MessageViewHolder>
                     visibility = View.VISIBLE
                 }
 
-                holder.itemView.tv_message2.visibility = View.GONE
+                holder.itemView.tv_message2.visibility = View.VISIBLE
             }
             RECEIVE_ID ->{
                 holder.itemView.tv_message2.apply{
                     text = currentMessage.message
                     visibility = View.VISIBLE
                 }
-                holder.itemView.tv_message.visibility = View.GONE
+                holder.itemView.tv_message.visibility = View.VISIBLE
             }
         }
     }

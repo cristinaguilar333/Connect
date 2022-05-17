@@ -163,7 +163,7 @@ class chatIndividual : AppCompatActivity() {
             etMessage.setText("")
 
             adapter.insertMessage(Message(message, SEND_ID, timeStamp))
-            rv_messages.scrollToPosition(adapter.itemCount+1)
+            rv_messages.scrollToPosition(adapter.itemCount-1)
 
             botResponse(message)
 
@@ -186,7 +186,7 @@ class chatIndividual : AppCompatActivity() {
                 //poner los mensajes en el adapter
                 adapter.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
 
-               rv_messages.scrollToPosition(adapter.itemCount+1)
+               rv_messages.scrollToPosition(adapter.itemCount-1)
 
             }
         }
