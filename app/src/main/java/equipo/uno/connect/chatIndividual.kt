@@ -181,7 +181,7 @@ class chatIndividual : AppCompatActivity() {
                 val responde = BotResponse.basicResponse(message)
 
                 //guardar respuesta
-                ref = database.getReference().child("Mensaje").push()
+                ref = database.getReference().child("Chats/chat1").push()
                 ref.setValue(responde)
 
                 //agregar a la lista de mensajes
@@ -211,7 +211,7 @@ class chatIndividual : AppCompatActivity() {
     private fun createMensaje(contenido : String){
 
         val mensaje = Mensaje1(contenido)
-        ref = database.getReference().child("Mensaje").push()
+        ref = database.getReference().child("Chats/chat1").push()
         ref.setValue(mensaje)
 
     }
