@@ -23,6 +23,7 @@ import com.google.firebase.storage.StorageReference
 import equipo.uno.connect.data.User
 import equipo.uno.connect.databinding.ActivityCrearCuentaBinding
 import equipo.uno.connect.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_crear_cuenta.*
 import java.io.IOException
 import java.util.*
 
@@ -92,6 +93,7 @@ class CrearCuenta : AppCompatActivity() {
 
         btnComienza.setOnClickListener {
             var intent : Intent = Intent(this, ChatActivity::class.java)
+            intent.putExtra("nombreUsuario", etUsuario2.text.toString())
             startActivity(intent)
         }
     }
