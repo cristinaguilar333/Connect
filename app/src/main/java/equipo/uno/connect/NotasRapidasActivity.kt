@@ -3,9 +3,11 @@ package equipo.uno.connect
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
@@ -20,12 +22,20 @@ class NotasRapidasActivity : AppCompatActivity() {
     private lateinit var empRecyclerView : RecyclerView
     private lateinit var  tvLoadingData : TextView
     lateinit var binding: ActivityNotasRapidasBinding
+    private lateinit var  empList : ArrayList<Nota>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notas_rapidas)
 
         empRecyclerView = findViewById(R.id.rv_notas)
+        empRecyclerView.layoutManager = LinearLayoutManager(this)
+        empRecyclerView.setHasFixedSize(true)
+
+        empList = arrayListOf<Nota>()
+
+        getNotasData()
+
 
 
 
@@ -61,6 +71,9 @@ class NotasRapidasActivity : AppCompatActivity() {
         }
     }
 
+    private fun getNotasData() {
+        empRecyclerView.visibility = View.GONE
+    }
 
 
 }
