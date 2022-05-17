@@ -10,10 +10,12 @@ import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import equipo.uno.connect.databinding.ActivityNotasRapidasBinding
 
 class NotasRapidasActivity : AppCompatActivity() {
     public final var REQUEST_CODE_NOTE : Int = 1
     private val notaRef = FirebaseDatabase.getInstance().getReference("connect")
+    private lateinit var binding : ActivityNotasRapidasBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +53,7 @@ class NotasRapidasActivity : AppCompatActivity() {
         var listV : TextView = findViewById(R.id.textView3)
         //val text = listV.text.toString() + mark.toString() + "\n"
         listV.setText(listV.text.toString() + mark.toString() + "\n")
+        
     }
 
 }
