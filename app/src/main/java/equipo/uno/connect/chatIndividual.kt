@@ -118,7 +118,7 @@ class chatIndividual : AppCompatActivity() {
 
     private fun clickEvents(){
         btnEnviar.setOnClickListener{
-            val contenido= findViewById<TextView>(R.id.etMessage).text.toString()
+            val contenido : String= findViewById<TextView>(R.id.etMessage).text.toString()
 
             createMensaje(contenido)
 
@@ -138,12 +138,7 @@ class chatIndividual : AppCompatActivity() {
 
     private fun recyclerView(){
         adapter = MessagingAdapter()
-        //rv_messages.adapter = adapter
-        //rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-
-
         rv_messages.adapter = adapter
-
         rv_messages.layoutManager = LinearLayoutManager(applicationContext)
     }
 
@@ -187,10 +182,7 @@ class chatIndividual : AppCompatActivity() {
                 adapter.insertMessage(Message(message, RECEIVE_ID, timeStamp))
 
                rv_messages.scrollToPosition(adapter.itemCount-1)
-
-                when(responde){
-
-                }
+                
             }
         }
     }
