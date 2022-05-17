@@ -134,7 +134,11 @@ class chatIndividual : AppCompatActivity() {
         }
     }
 
-
+    private fun recyclerView(){
+        adapterM = MessagingAdapter()
+        rv_messages.adapter = adapterM
+        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
+    }
 
     override fun onStart(){
         super.onStart()
@@ -208,10 +212,6 @@ class chatIndividual : AppCompatActivity() {
 
     }
 
-    private fun recyclerView(){
-        adapterM = MessagingAdapter()
-        rv_messages.adapter = adapterM
-        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-    }
+
 
 }
