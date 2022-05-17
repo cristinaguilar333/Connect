@@ -105,12 +105,6 @@ class chatIndividual : AppCompatActivity() {
         cargarImagen()
     }
 
-    private fun recyclerView(){
-        adapterM = MessagingAdapter()
-        rv_messages.adapter = adapterM
-        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
-    }
-
     private fun cargarImagen(){
         imageUri = Uri.parse("android.resource://$packageName/${R.drawable.send_round_box}")
         storageReference = FirebaseStorage.getInstance().getReference("connect/"+auth.currentUser?.uid)
@@ -163,7 +157,7 @@ class chatIndividual : AppCompatActivity() {
             messagesList.add(Message(message, SEND_ID, timeStamp))
             etMessage.setText("")
 
-            adapterM.messageList.add(Message(message, SEND_ID, timeStamp))
+            adapterM.insertMessage(Message(message, SEND_ID, timeStamp))
             rv_messages.scrollToPosition(adapterM.itemCount - 1)
 
             botResponse(message)
@@ -185,8 +179,8 @@ class chatIndividual : AppCompatActivity() {
                 //agregar a la lista de mensajes
                 messagesList.add(Message(responde, RECEIVE_ID, timeStamp))
                 //poner los mensajes en el adapter
-                //adapterM.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
-                adapterM.messageList.add(Message(responde, RECEIVE_ID, timeStamp))
+                adapterM.insertMessage(Message(responde, RECEIVE_ID, timeStamp))
+                //adapterM.messageList.add(Message(responde, RECEIVE_ID, timeStamp))
                rv_messages.scrollToPosition(adapterM.itemCount-1)
 
             }
@@ -213,4 +207,11 @@ class chatIndividual : AppCompatActivity() {
         ref.setValue(mensaje)
 
     }
+
+    private fun recyclerView(){
+        adapterM = MessagingAdapter()
+        rv_messages.adapter = adapterM
+        rv_messages.layoutManager = LinearLayoutManager(applicationContext)
+    }
+
 }
