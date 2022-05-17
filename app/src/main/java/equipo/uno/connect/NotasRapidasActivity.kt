@@ -53,7 +53,7 @@ class NotasRapidasActivity : AppCompatActivity() {
         var listV : TextView = findViewById(R.id.textView3)
         //val text = listV.text.toString() + mark.toString() + "\n"
         listV.setText(listV.text.toString() + mark.toString() + "\n")
-        
+
     }
 
 }
