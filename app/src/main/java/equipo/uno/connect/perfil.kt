@@ -11,16 +11,11 @@ class perfil : AppCompatActivity() {
 
 
     lateinit var volver : ImageButton
-    lateinit var etUsuario : EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil)
 
-        val nombreUsuario = intent.getStringExtra("nombreUsuario")
 
-        etUsuario = findViewById(R.id.etUsuario)
-
-        etUsuario.setText(nombreUsuario.toString())
 
         volver = findViewById(R.id.btnVolver)
 
