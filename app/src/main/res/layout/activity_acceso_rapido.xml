@@ -260,17 +260,16 @@
         android:id="@+id/tv_presentacion"
         android:layout_width="119dp"
         android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:background="@color/colorVerde"
         android:fontFamily="@font/montserratregular"
         android:gravity="left"
         android:text="Presentación.mp4"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_actividad1"
         app:layout_constraintEnd_toStartOf="@+id/tv_diagrama"
         app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toEndOf="@+id/tv_mapa"
-        app:layout_constraintTop_toBottomOf="@+id/tvChat"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_multimediaReciente" />
 
     <TextView
         android:id="@+id/tv_diagrama"
@@ -282,12 +281,10 @@
         android:gravity="left"
         android:text="Diagrama.png"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_equipos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toEndOf="@+id/tv_mapa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Avance1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_Avance1" />
 
     <TextView
         android:id="@+id/tv_pizarrareciente"
@@ -305,10 +302,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
         app:layout_constraintVertical_bias="0.285" />
 
+
+    //Pie de pagina
+
     <TextView
         android:id="@+id/tv_moodboard"
-        android:layout_width="110dp"
-        android:layout_height="30dp"
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="456dp"
         android:background="@color/colorGris"
         android:fontFamily="@font/montserratregular"
@@ -316,45 +317,9 @@
         android:text="Moodboard"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnAjustes"
-        app:layout_constraintEnd_toStartOf="@+id/tv_actividad1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAccesoRapido"
-        app:layout_constraintVertical_bias="0.036" />
-
-
-    //Pie de pagina
-
-    <TextView
-        android:id="@+id/tv_actividad1"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:background="@color/colorGris"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="left"
-        android:text="Actividad 1"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/tv_equipos"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado"
-        app:layout_constraintVertical_bias="0.814" />
-
-    <TextView
-        android:id="@+id/tv_equipos"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:background="@color/colorGris"
-        android:fontFamily="@font/montserratregular"
-        android:gravity="left"
-        android:text="Equipos"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <View
         android:id="@+id/view"
